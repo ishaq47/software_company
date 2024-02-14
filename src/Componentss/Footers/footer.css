@@ -19,28 +19,26 @@
 }
 
 .footer-39201 .nav-links li a:hover {
-  color: #fff;
-  opacity: 0.5;
+  color: goldenrod;
+  opacity: 0.3;
 }
-.nav-links {
-  padding-left: 100px;
-}
+
 .contect-div .btn-jion {
   width: 100px;
   height: 45px;
-  background-color: #e56700;
-  border-color: #e56700;
+  background-color: goldenrod;
+  border-color: goldenrod;
   border-radius: 20px;
   color: #fff;
   transition: 0.3s;
   font-size: 15px;
   font-weight: 600;
-  border: 2px solid #e56700;
+  border: 2px solid goldenrod;
 }
 .contect-div .btn-jion:hover {
   background-color: #fff;
-  color: #e56700;
-  border-color: #e56700;
+  color: goldenrod;
+  border-color: goldenrod;
 }
 
 .abs h3 {
@@ -75,14 +73,14 @@
 }
 
 .conicon:hover {
-  color: #e56700;
+  color: goldenrod;
 }
 
 .social-icons {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px;
+  /* width: 300px; */
     height: 25px;
 }
 .logofot {
@@ -92,7 +90,7 @@
 background-color: #e56700;
 } */
 .loc p{
-  background-color: #e56700;
+  background-color: goldenrod;
   border-radius: 50%;
   border: 1px solid gray;
   padding: 5px 8px;

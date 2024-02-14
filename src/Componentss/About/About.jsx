@@ -26,27 +26,26 @@ import imgpro12 from "../../image/khpalmart.webp";
 import imgpro13 from "../../image/petron1.png";
 import imgpro14 from "../../image/repair1.png";
 import imgpro15 from "../../image/saloon1.png";
-
+import mintoga from "../../image/mento.png"
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import { GrLinkedinOption } from "react-icons/gr";
+import { GrFacebookOption, GrLinkedinOption } from "react-icons/gr";
 import Career from "../Careers/Career";
 import Footers from "../Footers/Footer";
 import Fade from "react-reveal/Fade";
 import { useNavigate } from "react-router-dom";
-
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-import { EffectCoverflow, Pagination, Navigation } from "swiper";
 import { Helmet } from "react-helmet";
 import Ourteam from "./Ourteam";
+import { FaFacebookF, FaGithub, FaTwitter } from "react-icons/fa";
+import { BsInstagram, BsWhatsapp } from "react-icons/bs";
+import { SiUpwork } from "react-icons/si";
 
 const About = () => {
   const navigate = useNavigate();
@@ -61,7 +60,10 @@ const About = () => {
       img: imgsen1,
       title: "CEO",
       name: "Saud Khan",
-      link: "https://www.linkedin.com/in/saudkhan0039/",
+      link: "https://www.linkedin.com/in/saudkhan39",
+      upwork:"https://www.upwork.com/freelancers/saudk19",
+      x:"https://twitter.com/techcreatorco",
+      gethub:"https://gitlab.com/saudkhanbpk "
     },
     {
       img: imgsen3,
@@ -77,23 +79,25 @@ const About = () => {
       title: "CEO FullStack Developer",
       name: "Saud Khan",
       link: "https://www.linkedin.com/in/saudkhan0039/",
+     
     },
     {
       img: imgteam14,
       title: "Full Stack Developer",
       name: "Aqib Khan",
+      link: "https://www.linkedin.com/in/aqib-hassan-zeb-bb7b58211/"
     },
     {
       img: imgteam1,
       title: "Full Stack Developer",
       name: "Imran Khan",
-      link: "https://pk.linkedin.com/in/aamir-shahzad-77ba95191?trk=public_profile_browsemap",
+      link: "https://www.linkedin.com/in/imran-khan-160446216/",
     },
     {
       img: imgteam4,
       title: "Full Stack Developer",
       name: "Saad Khan",
-      link: "https://pk.linkedin.com/in/rooh-ullah-bpk?trk=public_profile_browsemap",
+      link: "https://www.linkedin.com/in/saad-khan-42716a222/",
     },
   ];
 
@@ -195,14 +199,7 @@ const About = () => {
       head: "Repaircms",
       para: "The fact that they’ve been with us from the start and were patient, supportive, committed, and flexible is excellent.",
       btn: "Go To Website",
-    },
-    // {
-    //   img: imgpro15,
-    //   link: "https://dancing-vacherin-e90755.netlify.app/",
-    //   head: "Saloon",
-    //   para: "A spot where all your beauty appointments meet",
-    //   btn: "Go To Website",
-    // },
+    }
   ];
   return (
     <>
@@ -442,14 +439,43 @@ const About = () => {
                                 {item.name}
                               </p>
                             </div>
-                            <div>
+                            <div className="flex gap-3 mb-0 mt-4">
                               <a
                                 href={item.link}
                                 target="_blank"
                                 className="icon"
                               >
-                                <GrLinkedinOption />
+                                <GrLinkedinOption className="self-center" />
                               </a>
+                              <a
+                                href={item.upwork}
+                                target="_blank"
+                                className="icon"
+                              >
+                                <SiUpwork className="self-center" />
+                              </a>
+                             {/* <a
+                                href={item.link}
+                                target="_blank"
+                                className="icon"
+                              >
+                                <BsIns tagram className="self-center text-pink-400"  />
+                              </a> */}
+                              <a
+                                href={item.x}
+                                target="_blank"
+                                className="icon"
+                              >
+                                <FaTwitter className="self-center" />
+                              </a>
+                              <a
+                                href={item.gethub}
+                                target="_blank"
+                                className="icon"
+                              >
+                                <FaGithub className="self-center" />
+                              </a>
+                            
                             </div>
                           </Card.Text>
                         </Card.Body>
@@ -531,7 +557,7 @@ const About = () => {
                                 {item.name}
                               </p>
                             </div>
-                            <div>
+                            <div className="flex gap-3 mt-4">
                               <a
                                 href={item.link}
                                 target="_blank"
@@ -539,6 +565,21 @@ const About = () => {
                               >
                                 <GrLinkedinOption />
                               </a>
+                              {/* <a
+                                href={item.link}
+                                target="_blank"
+                                className="icon"
+                              >
+                                <BsInstagram className="text-pink-400" />
+                              </a> */}
+                              <a
+                                href={item.link}
+                                target="_blank"
+                                className="icon"
+                              >
+                                <FaTwitter />
+                              </a>
+                              
                             </div>
                           </Card.Text>
                         </Card.Body>

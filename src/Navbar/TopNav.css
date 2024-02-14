@@ -12,12 +12,18 @@
 .nav-item {
 	padding: 10px;
 	font-size: 15px;
+	color: white;
+}
+.nav-item:hover {
+	color: goldenrod;
+	border-bottom: gold;
 }
 .nav-item:after {
 	content: '';
 	width: 0%;
 	height: 2px;
-	background: #8c40d4 !important;
+	background: goldenrod !important;
+	color: goldenrod !important;
 	display: block;
 	margin: auto;
 	transition: .5s;
@@ -25,22 +31,25 @@
 
 .nav-item:hover:after {
 	width: 100%;
-	background-color: #8c40d4 !important;
 	list-style-type: none;
 }
+
 .navbar-toggler-icon{
 	background-color: white;
 }
 .logo img {
 	width: 100px;
 }
+.logo img:hover{
+	color: goldenrod;
+}
 .btn-nav {
-	background-color: #8c40d4;
+	background-color:goldenrod ;
 	color: white;
-	padding: 10px;
-	border-radius: 10px;
+	
+	border-radius: 5px;
 }
 .btn-nav:hover{
 	color: white;
-	background-color: #7818d2 ;
+	background-color: rgb(240, 178, 22) ;
 }

@@ -1,7 +1,7 @@
 .contact-main{
     background-image: url(/src/image/servicesbg.svg);
     width: 100%;
-    height: auto;
+    height: 400px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,19 +40,19 @@
 border-radius: 5px;
 }
 .contact-btn{
-  color: #e56700;
+  color: goldenrod;
     font-weight: 500;
     font-size: 15px;
     width: 156px;
     height: 50px;
-    border-color: #e56700;
-    border-radius: 30px;
+    border-color: goldenrod;
+    border-radius: 5px;
     background-color: #fff;
     transition: 0.5s;
     border: 2px solid;
 }
 .contact-btn:hover{
-  background-color: #e56700;
+  background-color: goldenrod;
   color: #fff;
 }
 .form p{

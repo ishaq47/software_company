@@ -2,25 +2,17 @@ import React from "react";
 import './team.scss';
 import Fade from "react-reveal/Fade";
 import imgteam1 from "../../image/Imran.png";
-import imgteam2 from "../../image/Hamid.png";
 import imgteam3 from "../../image/sam.png";
 import imgteam4 from "../../image/saad.png";
-import imgteam5 from "../../image/Sameer.png";
 import imgteam6 from "../../image/ahmad.png";
-import imgteam7 from "../../image/romi.jpg";
 import imgteam8 from "../../image/rehman.png";
-import imgteam9 from "../../image/ihtizaz.png";
 import imgteam10 from "../../image/luqman.png";
-import imgteam11 from "../../image/ayaz.png";
-import imgteam12 from "../../image/mustafa.png";
-import imgteam13 from "../../image/ihtesham.png";
+import imgteam12 from "../../image/mustafa.png"; 
 import imgteam14 from "../../image/Aqib.png";
 import imgteam15 from "../../image/basit.png";
-import imgteam16 from "../../image/hamza.png";
-import imgteam17 from "../../image/inam.png";
-import imgteam18 from "../../image/Sameer2.png";
+import imgteam16 from "../../image/hamzafarooq.jpg";
 import imgteam19 from "../../image/ayaz-removebg-preview.jpg";
-import { GrLinkedinOption } from "react-icons/gr";
+import { GrInstagram, GrLinkedinOption, GrTwitter } from "react-icons/gr";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -38,12 +30,7 @@ const team = [
     name:"Ayaz Khan",
     title:"React Developer"
   },
-  // {
-  //   img:imgteam2,
-  //   linkdin:"https://www.linkedin.com/in/hamid-khan-b47b1b261/",
-  //   name:"Hamid Khan",
-  //   title:"React Developer"
-  // },
+  
   {
     img:imgteam3,
     linkdin:"https://www.linkedin.com/in/sameer-khan-660966251/",
@@ -57,60 +44,33 @@ const team = [
     title:"Anular Developer"
   },
   {
-    img:imgteam5,
-    linkdin:"https://www.linkedin.com/in/sameer-khan-2358a9248/",
-    name:"Sameer Khan",
-    title:"Angular Developer"
-  },
-  {
     img:imgteam6,
     linkdin:"https://www.linkedin.com/in/ahmad-ali-791190241/",
     name:"Ahmad Ali",
     title:"Angular Developer"
   },
-  // {
-  //   img:imgteam7,
-  //   linkdin:"https://www.linkedin.com/in/zeeshan-khan-aa1026243/",
-  //   name:"Zeeshan Khan",
-  //   title:"React Developer"
-  // },
+ 
   {
     img:imgteam8,
-    linkdin:"https://www.linkedin.com/in/saudkhan0039/",
-    twitter:"https://www.linkedin.com/in/saudkhan0039/",
-    inta:"https://www.linkedin.com/in/saudkhan0039/",
-    name:"Rehman Zeb Khan",
+    linkdin:"https://www.linkedin.com/in/rehmanzeb",
+    twitter:"https://twitter.com/Rehmanzeb5",
+    insta:"https://www.linkedin.com/in/saudkhan0039/",
+    name:"Rehman Zeb",
     title:"React Developer"
   },
-  // {
-  //   img:imgteam9,
-  //   linkdin:"https://www.linkedin.com/in/ihtizaz-ahmad-716385255/",
-  //   name:"Ihtizaz Khan",
-  //   title:"Angular Developer"
-  // },
+ 
   {
     img:imgteam10,
     linkdin:"https://www.linkedin.com/in/luqman-yousafzai-8a4744223",
     name:"Muhammad Luqman",
     title:"Angular Developer"
   },
-  // {
-  //   img:imgteam11,
-  //   linkdin:"https://www.linkedin.com/in/muhammad-ayaz-4823b3251/",
-  //   name:"Ayaz Khan",
-  //   title:"React Developer"
-  // },
+ 
   {
     img:imgteam12,
     linkdin:"https://www.linkedin.com/in/mustafa-zeb-72a180172/",
     name:"Mustafa Khan",
     title:"React Developer"
-  },
-  {
-    img:imgteam13,
-    linkdin:"https://www.linkedin.com/in/ihtesham-ul-haq-36aa10123/",
-    name:"Ihtesham Khan",
-    title:"Designer"
   },
   {
     img:imgteam14,
@@ -129,21 +89,7 @@ const team = [
     linkdin:"https://www.linkedin.com/in/hamza-farooq-009673227/",
     name:"Hamza Farooq",
     title:"React Developer"
-  },
-  {
-    img:imgteam17,
-    linkdin:"https://www.linkedin.com/in/saudkhan0039/",
-    twitter:"https://www.linkedin.com/in/saudkhan0039/",
-    inta:"https://www.linkedin.com/in/saudkhan0039/",
-    name:"Inam Ulhaq",
-    title:"React Developer"
-  },
-  {
-    img:imgteam18,
-    linkdin:"https://www.linkedin.com/in/sameer-ahmad-8915ab17a/",
-    name:"Sameer Ahmad",
-    title:"React Developer"
-  },
+  } 
 ]
 const Ourteam = () =>{
   let  seetings = {
@@ -200,7 +146,10 @@ const Ourteam = () =>{
                     <img src={item.img} className="img-fluid item1"/>
                   </div>
                   <ul className="social-icon">
-                    <li><a href={item.linkdin} target="_blank"><i className="fa"><GrLinkedinOption/></i></a></li>
+                    <li><a href={item.insta} target="_blank"><i className="fa"><GrInstagram className="insta icon"/></i></a></li>
+                    <li><a href={item.linkdin} target="_blank"><i className="fa"><GrLinkedinOption className="icon"/></i></a></li>
+                    <li><a href={item.twitter} target="_blank"><i className="fa"><GrTwitter className="icon"/></i></a></li>
+
                   </ul>
                   <div className="details">
                     <h2>{item.name} <span className="job-title text-primary">{item.title}</span></h2>

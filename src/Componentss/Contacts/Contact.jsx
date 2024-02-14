@@ -314,9 +314,9 @@ const Contact = () => {
                             CALL US
                           </h3>
                           <p className="text-white op-7">
-                            +923488123407
+                          +92-311-9265290
                             <br />
-                            {/* 03485422181{" "} */}
+    
                           </p>
                           <div className="col-md-3 col-sm-12 col-xs-12 text-center">
                             <div className="">
@@ -325,25 +325,25 @@ const Contact = () => {
                                   href="https://www.facebook.com/brainspkpage"
                                   className="p-2"
                                 >
-                                  <FaFacebook className="conicon" />
+                                  <FaFacebook className="  w-6 h-6 text-blue-500" />
                                 </a>
                                 <a
                                   href="https://www.linkedin.com/company/brainspk/"
                                   className="p-2"
                                 >
-                                  <FaLinkedinIn className="conicon " />
+                                  <FaLinkedinIn className=" w-6 h-6 text-blue-500 " />
                                 </a>
                                 <a
                                   href="https://www.instagram.com/brainspk2021/"
                                   className="p-2"
                                 >
-                                  <FaInstagram className="conicon " />
+                                  <FaInstagram className="w-6 h-6 text-pink-600" />
                                 </a>
                                 <a
                                   href="https://www.instagram.com/brainspk2021/"
                                   className="p-2"
                                 >
-                                  <GrTwitter className="conicon " />
+                                  <GrTwitter className=" w-6 h-6 text-blue-600 " />
                                 </a>
                               </div>
                             </div>

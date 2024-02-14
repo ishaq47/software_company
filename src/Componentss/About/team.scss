@@ -98,9 +98,9 @@
             height: 40px;
             line-height: 40px;
             text-align: center;
-            background: #fff;
+            background: none;
             font-size: 23px;
-            color: #333;
+            color: #0067a5;
             font-weight: bold;
             margin: 0 6px;
             transition: .4s;
@@ -118,13 +118,17 @@
     }
 }
 .social-icon li a:hover{
-background: #000;
+background: none;
+
 transition: .2s;
-.fa{
+.icon{
     color: #fff;
 }
 }
-.social-icon li a .fa{
+.social-icon li a i .insta{
+    color: pink;
+}
+.social-icon li a i .icon{
     transition: .8s;
     &:hover{
         transform: rotateY(360deg);

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./career.css";
-import { MdKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardArrowRight, MdSend } from "react-icons/md";
 import piwe from "../../image/career.jpg";
 import Fade from "react-reveal/Fade";
 import Button from "react-bootstrap/Button";
@@ -109,10 +109,10 @@ const Career = () => {
                       to explore our current job openings and apply today. We
                       look forward to hearing from you!
                     </p>
-                    <div className="div-btn pt-5 col-sm-12 ">
+                    <div className=" pt-5 col-sm-12 ">
                       {/* <button className="btns1 m-3">View our job openings <MdKeyboardArrowRight className="md_icon" /></button> */}
-                      <button className="btns2 m-3" onClick={handleShow}>
-                        Send resume <MdKeyboardArrowRight className="md_icon" />
+                      <button className="btns2 " onClick={handleShow}>
+                       <div>Send Resume </div> <MdSend className="md_icon" />
                       </button>
                       <Modal show={show} onHide={handleClose}>
                         <Modal.Header closeButton>
