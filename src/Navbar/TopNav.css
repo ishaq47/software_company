@@ -16,7 +16,10 @@
 }
 .nav-item:hover {
 	color: goldenrod;
-	border-bottom: gold;
+	border-radius: 5px;
+	
+
+
 }
 .nav-item:after {
 	content: '';
@@ -32,11 +35,25 @@
 .nav-item:hover:after {
 	width: 100%;
 	list-style-type: none;
-}
 
-.navbar-toggler-icon{
-	background-color: white;
+
 }
+@media screen and (max-width: 991px) {
+	.nav-item:hover {
+	  background-color: goldenrod;
+	 
+	  border-bottom: none;
+	  color:white;
+	}
+	.btn-nav {
+		/* background: none !important; */
+		border-radius: 0;
+	
+	}
+	
+  }
+  
+
 .logo img {
 	width: 100px;
 }

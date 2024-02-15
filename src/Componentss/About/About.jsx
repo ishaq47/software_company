@@ -421,7 +421,7 @@ const About = () => {
                           <img
                             src={item.img}
                             alt="techCreator's UX/UI design"
-                            className="img-fluid"
+                            className="img-fluid "
                           />
                         </div>
                         <Card.Body className="main-cards">

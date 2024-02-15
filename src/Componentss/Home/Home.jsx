@@ -16,17 +16,15 @@ import imgs2 from "../../image/Patronlogo.png";
 import imgs3 from "../../image/logo-white.png";
 import imgs5 from "../../image/BelgiumImmo.png";
 import imgs7 from "../../image/twitter.png";
-import mentoga from "../../image/mento.png"
 import Career from "../Careers/Career";
 import Footers from "../Footers/Footer";
 import { useNavigate } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import cardimg2 from "../../image/Patronlogo.png";
 import cardimg3 from "../../image/logo-white.png";
-import { FaLinkedinIn } from "react-icons/fa";
-import { RiWhatsappFill } from "react-icons/ri";
 import { SiUpwork } from "react-icons/si";
 import { ImWhatsapp } from "react-icons/im";
+import { FaLinkedinIn } from "react-icons/fa";
 const boxInfo = [
   {
     img: cardimg3,
@@ -73,30 +71,8 @@ const Home = () => {
           <div className="row">
             <div className="col-12 col-md-10 mx-auto home-main">
               <div className="container1">
-                <div className="fixed md:top-56 align-items-center  flex flex-col gap-4 right-3 z-10 ">
-                <div className="bg-green-400 p-1 rounded"> <a
-                    href="https://www.upwork.com/ag/brainspk/  "
-                    target="_blank"
-                  >
-                    <SiUpwork className="h-7 md:h-10 w-7 md:w-10 text-white  self-center " />
-                  </a>
-                  </div>
-                  <div className="bg-green-400 p-1 rounded">
-                  <a href="tel:+92-311-9265290">
-                    <ImWhatsapp className="text-white  w-7 md:w-10 h-7 md:h-10  " />
-                  </a>
-                  </div>
-                  <div className="bg-blue-700 p-1 rounded">
-                  <a
-                    href="https://linkedin.com/company/techcreator"
-                    target="_blank"
-                  >
-                    <FaLinkedinIn className=" text-white h-7  md:h-10 w-7 md:w-10 self-center " />
-                  </a>
-                  </div>
-                  
-                </div>
-                <Fade left duration={2000}>
+          
+               <Fade left duration={2000}>
                   <div className="min-head col-lg-12 col-md-10 col-sm-12 pt-5 pt-lg-0 d-flex justify-content-center flex-column text-center mt-[-80px] md:mt-0">
                     <h1 className="text-center col-lg-7 align-center mx-auto">
                       We <span className="text-textColor">Automate</span> Your

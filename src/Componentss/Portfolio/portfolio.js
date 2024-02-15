@@ -1,4 +1,3 @@
-import react from "react"
 import "./portfolio.css";
 import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
@@ -7,17 +6,14 @@ import Fade from "react-reveal/Fade";
 import Career from "../Careers/Career";
 import Footers from "../Footers/Footer";
 import { Helmet } from "react-helmet"
-import imgpro1 from "../../image/travcont.webp";
 import imgpro2 from "../../image/RiseImage.webp";
 import imgpro3 from "../../image/raso.webp";
 import imgpro4 from "../../image/Behance.webp";
 import imgpro5 from "../../image/AddaImage.webp";
 import imgpro6 from "../../image/bubbleImage.webp";
-import imgpro7 from "../../image/MusafirImage.webp";
 import imgpro8 from "../../image/GratitudeImage.webp";
 import imgpro9 from "../../image/traficinfoImage.webp";
 import imgpro10 from "../../image/PakfoneImage.webp";
-import imgpro11 from "../../image/khpalmart.webp";
 import imgpro12 from "../../image/khpalmart.webp";
 import imgpro13 from "../../image/petron1.png";
 import imgpro14 from "../../image/repair1.png";
@@ -41,6 +37,7 @@ import imgpro31 from "../../image/image31.PNG";
 import imgpro32 from "../../image/image32.PNG";
 import imgpro33 from "../../image/image33.PNG";
 const Portfolio=()=>{
+
   const itemsPerPage = 12;
   const [currentPage, setCurrentPage] = useState(1);
   
@@ -311,6 +308,7 @@ const Portfolio=()=>{
           content="techcreator, techCreator's UX/UI design, custom software development solutions, techcreator software house, softwarehouse, apps development, software industry, swabi software house, techcreator about"
         />
         <link rel="canonical" href="/about" />
+      
       </Helmet>
       <section className="d-flex align-items-center aboutimg text-white">
         <div className="container-fluid ">
@@ -324,7 +322,7 @@ const Portfolio=()=>{
                   <div className="col-lg-5 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                     <h1 className="about">Our Portfolio</h1>
                   </div>
-
+          
                   <div className="col-lg-7 col-md-12 col-sm-12 mb-5">
                     <p className="we-about lead">
                     At TechCreator Software Company, we specialize in crafting bespoke software solutions that cater to your unique business needs. Our portfolio showcases a range of successful projects, from intuitive mobile apps to dynamic web platforms. With a talented team dedicated to quality and innovation, we're your partner in turning ideas into impactful realities. Join us in the journey of transforming your vision into cutting-edge technology.
@@ -333,6 +331,7 @@ const Portfolio=()=>{
                 </div>
               </div>
             </Fade>
+
           </div>
         </div>
       </section>
@@ -390,4 +389,4 @@ const Portfolio=()=>{
         </>
     )
 }
-export default Portfolio
+export default Portfolio;

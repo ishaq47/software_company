@@ -5,9 +5,11 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./TopNav.css";
 import logo from "../image/techlogo.png";
-import { BsMenuAppFill, BsWhatsapp } from "react-icons/bs";
+
 
 const TopNav = () => {
+ 
+  
   const menuData = [
     {
       path: "/",
@@ -36,7 +38,7 @@ const TopNav = () => {
       <Navbar expand="lg" fixed="top" className="main-nav bg-blue-500 py-2 bg-[#00000]">
         <Container>
           <NavLink to="/" className="logo ">
-            <img src={logo} />
+            <img src={logo} alt="logo" />
            
           </NavLink>
           <div>
@@ -53,7 +55,7 @@ const TopNav = () => {
             </Nav>    
             
             <Nav className="ms-auto">
-              <NavLink  to="/contact" className="btn-nav px-3 py-2  md:py-1  ">
+              <NavLink  to="/contact" className="btn-nav px-3 py-2 md:py-1  ">
                 CONTACT
               </NavLink>  
             </Nav>

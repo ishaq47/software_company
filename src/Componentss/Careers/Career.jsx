@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./career.css";
-import { MdKeyboardArrowRight, MdSend } from "react-icons/md";
+import { MdSend } from "react-icons/md";
 import piwe from "../../image/career.jpg";
 import Fade from "react-reveal/Fade";
 import Button from "react-bootstrap/Button";
@@ -8,7 +8,7 @@ import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-const Career = () => {
+const Career = () =>{
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -112,7 +112,7 @@ const Career = () => {
                     <div className=" pt-5 col-sm-12 ">
                       {/* <button className="btns1 m-3">View our job openings <MdKeyboardArrowRight className="md_icon" /></button> */}
                       <button className="btns2 " onClick={handleShow}>
-                       <div>Send Resume </div> <MdSend className="md_icon" />
+                       <div >Send Resume </div> <MdSend className="md_icon" />
                       </button>
                       <Modal show={show} onHide={handleClose}>
                         <Modal.Header closeButton>

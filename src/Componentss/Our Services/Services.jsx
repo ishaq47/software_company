@@ -1,18 +1,9 @@
 import React from "react";
 import "./services.css";
-
-import { MdKeyboardArrowRight } from "react-icons/md";
-import imgdev from "../../image/banner .png";
-
-import imgdescover from "../../image/banner Pos.png";
 import card1 from "../../image/softwear.png";
-import card2 from "../../image/services.png";
 import card3 from "../../image/master.png";
 import card4 from "../../image/interface.png";
-import card5 from "../../image/science.png";
 import card6 from "../../image/testing.png";
-import card7 from "../../image/qc.png";
-import card8 from "../../image/branding.png";
 import card9 from "../../image/managment.png";
 import card10 from "../../image/development.png";
 import card11 from "../../image/archit.png";
@@ -27,7 +18,7 @@ const cardInfo = [
   {
     img: card10,
     header: "Web Development",
-    para: "TechCreator provides top-notch web development services to create modern and functional websites that meet our clients' needs.",
+    para: "TechCreator provides top-notch web development services to create modern and functional websites that meet our clients' needs.",
     btn: "VIEW SERVICE DETAILS",
   },
   {
@@ -79,7 +70,7 @@ const cardInfo = [
     header: "DevOps",
     para: "Our team of skilled engineers can help you integrate automation, testing, and deployment processes to ensure faster time-to-market and higher quality products.",
     btn: "VIEW SERVICE DETAILS",
-  },
+  }
 ];
 const Services = () => {
   return (
@@ -97,6 +88,7 @@ const Services = () => {
         />
         <link rel="canonical" href="/services" />
       </Helmet>
+    
 
       {/* <section className="d-flex align-items-center servises-main text-white">
         <div className="container-fluid ">
@@ -135,6 +127,7 @@ const Services = () => {
             className="row"
             style={{ marginTop: "15%", marginBottom: "15%" }}
           >
+      
             <Fade left delay={500} duration={3000}>
               <div className="col-10 mx-auto">
                 <div className="row">
@@ -159,6 +152,7 @@ const Services = () => {
                   </div>
                 </div>
               </div>
+
             </Fade>
           </div>
         </div>

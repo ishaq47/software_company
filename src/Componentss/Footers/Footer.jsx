@@ -6,11 +6,9 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { GrTwitter } from "react-icons/gr";
 import { SiUpwork } from "react-icons/si";
 import { IoLogoYoutube } from "react-icons/io";
-import { FaTiktok } from "react-icons/fa";
 import Fade from "react-reveal/Fade";
 import logofot from "../../image/techlogo.png";
 import { ImLocation2 } from "react-icons/im";
-import mentoga from "../../image/mentogaa.png";
 import { MdOutlineEmail } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
@@ -142,7 +140,7 @@ const Footers = () => {
             </div>
             <div>
               <div className="col-md-11 col-sm-12  text-center d-md-flex justify-content-between">
-                <p>&copy; 2023 TechCreator. All rights reserved.</p>
+                <p>&copy; 2024 TechCreator. All rights reserved.</p>
                 <div className="social-icons">
                   <a
                     href="https://www.facebook.com/techcreatorfb/"
@@ -159,14 +157,14 @@ const Footers = () => {
                     <FaLinkedinIn className="conicon" />
                   </a>
                   <a
-                    href="https://www.upwork.com/ag/brainspk"
+                    href="https://www.upwork.com/agencies/techcreator/"
                     className="p-2"
                     target="_blank"
                   >
                     <SiUpwork className="conicon" />
                   </a>
                   <a
-                    href="https://instagram.com/techcreatorco"
+                    href="https://www.instagram.com/techcreatorco/"
                     className="p-2"
                     target="_blank"
                   >
@@ -186,13 +184,7 @@ const Footers = () => {
                   >
                     <IoLogoYoutube className="conicon " />
                   </a>
-                  <a
-                    href="https://twitter.com/techcreatorco"
-                    className="p-2"
-                    target="_blank"
-                  >
-                    <FaTiktok className="conicon " />
-                  </a>
+                
                 </div>
               </div>
             </div>

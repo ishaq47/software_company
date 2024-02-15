@@ -14,6 +14,7 @@ import { Formik, Form, ErrorMessage } from "formik";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import * as yup from "yup";
+import { ImWhatsapp } from "react-icons/im";
 const initialValues = {
   name: "",
   email: "",
@@ -314,36 +315,39 @@ const Contact = () => {
                             CALL US
                           </h3>
                           <p className="text-white op-7">
-                          +92-311-9265290
+                            +92-311-9265290
                             <br />
-    
                           </p>
                           <div className="col-md-3 col-sm-12 col-xs-12 text-center">
                             <div className="">
-                              <div className="d-flex">
+                              <div className="flex">
                                 <a
-                                  href="https://www.facebook.com/brainspkpage"
+                                  href="https://www.facebook.com/techcreatorfb"
                                   className="p-2"
                                 >
                                   <FaFacebook className="  w-6 h-6 text-blue-500" />
                                 </a>
                                 <a
-                                  href="https://www.linkedin.com/company/brainspk/"
+                                  href="https://www.linkedin.com/company/techcreator/mycompany/"
                                   className="p-2"
                                 >
                                   <FaLinkedinIn className=" w-6 h-6 text-blue-500 " />
                                 </a>
                                 <a
-                                  href="https://www.instagram.com/brainspk2021/"
+                                  href="https://www.instagram.com/techcreatorco/"
                                   className="p-2"
                                 >
                                   <FaInstagram className="w-6 h-6 text-pink-600" />
                                 </a>
                                 <a
-                                  href="https://www.instagram.com/brainspk2021/"
+                                  href="https://twitter.com/techcreatorco"
                                   className="p-2"
                                 >
                                   <GrTwitter className=" w-6 h-6 text-blue-600 " />
+                                </a>
+
+                                <a href="tel:+92-311-9265290" className="p-2">
+                                  <ImWhatsapp className="text-white flex self-start top-10 bg-green-500   w-6 h-6  " />
                                 </a>
                               </div>
                             </div>

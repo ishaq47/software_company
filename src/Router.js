@@ -11,17 +11,19 @@ import Portfolio from "./Componentss/Portfolio/portfolio";
 import useFetch from "../src/hooks/useFetcgh";
 import Post from "./Componentss/Post/Post";
 import Caleneder from "./Caleneder";
+import Socialicon from "./Componentss/Socialicon";
 
 const RouterPage = () => {
+
   let { loading } = useFetch(
     `${process.env.REACT_APP_STRAPI_URL}/api/blogs?populate=*`
   );
   if (loading) return <p>Loading...</p>;
-
   return (
     <BrowserRouter>
       <Scrolltoup />
       <TopNav />
+      <Socialicon/>
       {/* Frontity Menu Link */}
       <Routes>
         {/* React Router Routes */}

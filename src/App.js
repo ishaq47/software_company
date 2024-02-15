@@ -2,8 +2,18 @@ import "./App.css";
 import { Helmet } from "react-helmet";
 
 import RouterPage from "./Router";
+import ReactGa from "react-ga"
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    // Initialize Google Analytics with your tracking ID
+    ReactGa.initialize('G-ZTK7M863ND');
+
+    // Send a pageview event for the current page
+    ReactGa.pageview(window.location.pathname + window.location.search);
+  }, []);
+ 
   return (
     <>
       <Helmet>

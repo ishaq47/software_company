@@ -250,9 +250,10 @@
     width: 100%;
     transition: 0.5s ease;
     overflow: hidden;
-    height: 270px;
+    height: 350px;
     border-bottom-right-radius: 12.5%;
     object-fit: cover;
+
     margin: 0px 0 20px 0;
 }
 
