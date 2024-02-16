@@ -12,7 +12,7 @@
 }
 @media screen and (max-width:768px){
     .about{
-        text-align: start;
+        text-align: center;
        
     }
 }
@@ -28,7 +28,7 @@
 }
 .we-about {
     color: white;
-    text-align: center;
+    text-align: start;
     
 }
 
