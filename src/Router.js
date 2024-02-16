@@ -12,16 +12,8 @@ import useFetch from "../src/hooks/useFetcgh";
 import Post from "./Componentss/Post/Post";
 import Caleneder from "./Caleneder";
 import Socialicon from "./Componentss/Socialicon";
-import ReactGa from "react-ga"
-import { useEffect } from "react";
 const RouterPage = () => {
-  useEffect(() => {
-    // Initialize Google Analytics with your tracking ID
-    ReactGa.initialize('G-P0FHCW4KFE');
 
-    // Send a pageview event for the current page
-    ReactGa.pageview(window.location.pathname + window.location.search);
-  }, []);
 
   let { loading } = useFetch(
     `${process.env.REACT_APP_STRAPI_URL}/api/blogs?populate=*`

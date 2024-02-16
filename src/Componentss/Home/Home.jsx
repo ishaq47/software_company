@@ -71,8 +71,8 @@ const Home = () => {
               <div className="container1">
           
                <Fade left duration={2000}>
-                  <div className="min-head col-lg-12 col-md-10 col-sm-12 pt-5 pt-lg-0 d-flex justify-content-center flex-column text-center mt-[-80px] md:mt-0">
-                    <h1 className="text-center col-lg-7 align-center mx-auto">
+                  <div className="min-head col-lg-12 col-m  d-10 col-sm-12 pt-5 pt-lg-0 d-flex justify-content-center flex-column text-center mt-[-80px] md:mt-0">
+                    <h1 className="text-center   col-lg-7 align-center mx-auto">
                       We <span className="text-textColor">Automate</span> Your
                       Business With
                       <span className="text-textColor">
@@ -428,18 +428,19 @@ const Home = () => {
                   <div className="col-md-6  col-lg-4 py-5">
                     <div className="box p-3 bg-white text-dark">
                       <img src={item.img} className=" img-div pt-2" />
+                      <img
+                          src={image4}
+                          alt="Techcreator Software Company"
+                          className="img-quote self-start top-11 relative"
+                        />
                       <p className="">{item.para}</p>
                       <a>
                         {" "}
-                        <img
-                          src={image4}
-                          alt="Techcreator Software Company"
-                          className="img-quote"
-                        />
+                       
                         <img
                           src={image4}
                           alt="TechCreator Software House"
-                          className="img-quote"
+                          className="img-quote relative bottom-10 left-20"
                         />{" "}
                         {item.link}
                       </a>

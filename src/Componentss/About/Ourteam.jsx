@@ -90,6 +90,7 @@ const team = [
     name:"Hamza Farooq",
     title:"React Developer"
   } 
+  
 ]
 const Ourteam = () =>{
   let  seetings = {

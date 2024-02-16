@@ -25,7 +25,6 @@ import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import { GrLinkedinOption } from "react-icons/gr";
 import Career from "../Careers/Career";
 import Footers from "../Footers/Footer";
 import Fade from "react-reveal/Fade";
@@ -196,6 +195,7 @@ const About = () => {
       para: "The fact that they’ve been with us from the start and were patient, supportive, committed, and flexible is excellent.",
       btn: "Go To Website",
     },
+   
   ];
   return (
     <>
@@ -224,7 +224,7 @@ const About = () => {
                     <h1 className="about">About Us</h1>
                   </div>
 
-                  <div className="col-lg-7 col-md-12 col-sm-12 mb-5">
+                  <div className="col-lg-7 col-md-12 col-sm-12 mb-5 ">
                     <p className="we-about lead">
                       At TechCreator, we pride ourselves on creating custom
                       software development solutions that help businesses
