@@ -180,7 +180,6 @@ const Contact = () => {
                               touched,
                               handleChange,
                               handleBlur,
-                              handleSubmit,
                               isSubmitting,
                             }) => (
                               <form onSubmit={handleSubmit} ref={form}>

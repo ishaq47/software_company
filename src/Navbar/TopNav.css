@@ -48,6 +48,8 @@
 	.btn-nav {
 		/* background: none !important; */
 		border-radius: 0;
+		width: 110px;
+		align-self: center;
 	
 	}
 	

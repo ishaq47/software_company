@@ -22,9 +22,7 @@ import { useNavigate } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import cardimg2 from "../../image/Patronlogo.png";
 import cardimg3 from "../../image/logo-white.png";
-import { SiUpwork } from "react-icons/si";
-import { ImWhatsapp } from "react-icons/im";
-import { FaLinkedinIn } from "react-icons/fa";
+
 const boxInfo = [
   {
     img: cardimg3,
@@ -82,7 +80,7 @@ const Home = () => {
                         Software Solutions
                       </span>
                     </h1>
-                    <p className="pt-2 lead col-lg-10 mx-auto">
+                    <p className="pt-3 lead col-lg-10 self-center mx-3 md:mx-0 ">
                       At TechCreator, We Don't Just Understand Business - We
                       Anticipate its Needs. Our Mission is to Empower Your
                       Growth Journey With Cutting-Edge Automation Solutions.
@@ -235,7 +233,7 @@ const Home = () => {
                   </Fade>
                 </div>
                 <Fade bottom delay={500} duration={3000}>
-                  <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-end text-end  flex-column">
+                  <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex    flex-column">
                     <h2 className="mt-5 Develop">
                       Software Products Discovery
                     </h2>
@@ -356,7 +354,7 @@ const Home = () => {
                     ></path>
                   </svg>
                 </a>
-                <div className="row bg-sam mt-5">
+                <div className="row bg-sam mt-5 w-[100%] md:w-auto">
                   <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                     <p className="petro">Repaircms</p>
                     <p className="mt-2 Plat">
@@ -422,14 +420,14 @@ const Home = () => {
       </Fade>
 
       <section className="card-img">
-        <div className="container py-5">
-          <div className="row">
+        <div className="container py-5 ">
+          <div className="row ">
             {boxInfo.map((item) => {
               return (
-                <Fade bottom duration={2000}>
+                <Fade bottom duration={2000} >
                   <div className="col-md-6  col-lg-4 py-5">
-                    <div className="box p-4 bg-white text-dark">
-                      <img src={item.img} className=" img-div pt-3" />
+                    <div className="box p-3 bg-white text-dark">
+                      <img src={item.img} className=" img-div pt-2" />
                       <p className="">{item.para}</p>
                       <a>
                         {" "}

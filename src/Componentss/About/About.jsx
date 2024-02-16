@@ -3,14 +3,11 @@ import React, { useState } from "react";
 import img1 from "../../image/img15.webp";
 import repairimg from "../../image/repaircms.jpeg";
 import patronimg from "../../image/petron.png";
-import saloonimg from "../../image/saloon.png";
 import imgsen1 from "../../image/saud.webp";
-import imgsen2 from "../../image/shehzadshah.webp";
 import imgteam14 from "../../image/Aqib.png";
 import imgteam4 from "../../image/saad.png";
 import imgteam1 from "../../image/Imran.png";
 import imgsen3 from "../../image/amir.webp";
-import imgsen4 from "../../image/roohullah.webp";
 import imgpro1 from "../../image/travcont.webp";
 import imgpro2 from "../../image/RiseImage.webp";
 import imgpro3 from "../../image/raso.webp";
@@ -21,30 +18,25 @@ import imgpro7 from "../../image/MusafirImage.webp";
 import imgpro8 from "../../image/GratitudeImage.webp";
 import imgpro9 from "../../image/traficinfoImage.webp";
 import imgpro10 from "../../image/PakfoneImage.webp";
-import imgpro11 from "../../image/khpalmart.webp";
 import imgpro12 from "../../image/khpalmart.webp";
 import imgpro13 from "../../image/petron1.png";
 import imgpro14 from "../../image/repair1.png";
-import imgpro15 from "../../image/saloon1.png";
-import mintoga from "../../image/mento.png"
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import { GrFacebookOption, GrLinkedinOption } from "react-icons/gr";
+import { GrLinkedinOption } from "react-icons/gr";
 import Career from "../Careers/Career";
 import Footers from "../Footers/Footer";
 import Fade from "react-reveal/Fade";
 import { useNavigate } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Helmet } from "react-helmet";
 import Ourteam from "./Ourteam";
-import { FaFacebookF, FaGithub, FaTwitter } from "react-icons/fa";
-import { BsInstagram, BsWhatsapp } from "react-icons/bs";
+import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { SiUpwork } from "react-icons/si";
 
 const About = () => {
@@ -61,15 +53,16 @@ const About = () => {
       title: "CEO",
       name: "Saud Khan",
       link: "https://www.linkedin.com/in/saudkhan39",
-      upwork:"https://www.upwork.com/freelancers/saudk19",
-      x:"https://twitter.com/techcreatorco",
-      gethub:"https://gitlab.com/saudkhanbpk "
+      upwork: "https://www.upwork.com/freelancers/saudk19",
+      x: "https://twitter.com/techcreatorco",
+      gethub: "https://gitlab.com/saudkhanbpk ",
     },
     {
       img: imgsen3,
       title: "MG",
       name: "Aamir Shehzad",
       link: "https://pk.linkedin.com/in/aamir-shahzad-77ba95191?trk=public_profile_browsemap",
+      upwork: "https://www.upwork.com/agencies/techcreator/",
     },
   ];
 
@@ -78,26 +71,29 @@ const About = () => {
       img: imgsen1,
       title: "CEO FullStack Developer",
       name: "Saud Khan",
-      link: "https://www.linkedin.com/in/saudkhan0039/",
-     
+      link: "https://www.linkedin.com/in/saudkhan39/",
+      upwork: "https://www.upwork.com/agencies/techcreator/",
     },
     {
       img: imgteam14,
       title: "Full Stack Developer",
       name: "Aqib Khan",
-      link: "https://www.linkedin.com/in/aqib-hassan-zeb-bb7b58211/"
+      link: "https://www.linkedin.com/in/aqib-hassan-zeb-bb7b58211/",
+      upwork: "https://www.upwork.com/agencies/techcreator/",
     },
     {
       img: imgteam1,
       title: "Full Stack Developer",
       name: "Imran Khan",
       link: "https://www.linkedin.com/in/imran-khan-160446216/",
+      upwork: "https://www.upwork.com/agencies/techcreator/",
     },
     {
       img: imgteam4,
       title: "Full Stack Developer",
       name: "Saad Khan",
       link: "https://www.linkedin.com/in/saad-khan-42716a222/",
+      upwork: "https://www.upwork.com/agencies/techcreator/",
     },
   ];
 
@@ -199,7 +195,7 @@ const About = () => {
       head: "Repaircms",
       para: "The fact that they’ve been with us from the start and were patient, supportive, committed, and flexible is excellent.",
       btn: "Go To Website",
-    }
+    },
   ];
   return (
     <>
@@ -439,43 +435,45 @@ const About = () => {
                                 {item.name}
                               </p>
                             </div>
-                            <div className="flex gap-3 mb-0 mt-4">
-                              <a
-                                href={item.link}
-                                target="_blank"
-                                className="icon"
-                              >
-                                <GrLinkedinOption className="self-center" />
-                              </a>
+                            <div className="flex gap-3 mb-0 mt-4 justify-center">
+                            <div className="bg-blue-700 p-1 rounded">
+                                <a
+                                  href={item.link}
+                                  target="_blank"
+                                >
+                                  <FaLinkedinIn className=" text-white h-7   w-7 self-center " />
+                                </a>
+                              </div>
+                              <div className="bg-green-500 p-1 rounded">
                               <a
                                 href={item.upwork}
                                 target="_blank"
                                 className="icon"
                               >
-                                <SiUpwork className="self-center" />
+                                <SiUpwork className=" text-white self-center" />
                               </a>
-                             {/* <a
+                              </div>
+                              {/* <a
                                 href={item.link}
                                 target="_blank"
                                 className="icon"
                               >
                                 <BsIns tagram className="self-center text-pink-400"  />
                               </a> */}
-                              <a
-                                href={item.x}
-                                target="_blank"
-                                className="icon"
-                              >
-                                <FaTwitter className="self-center" />
+                              <div className="bg-blue-700 p-1 rounded">
+                              <a href={item.x} target="_blank" className="icon">
+                                <FaTwitter className="self-center text-white" />
                               </a>
+                              </div>
+                              <div className="bg-black p-1 rounded">
                               <a
                                 href={item.gethub}
                                 target="_blank"
                                 className="icon"
                               >
-                                <FaGithub className="self-center" />
+                                <FaGithub className="self-center  text-white" />
                               </a>
-                            
+                              </div>
                             </div>
                           </Card.Text>
                         </Card.Body>
@@ -557,29 +555,22 @@ const About = () => {
                                 {item.name}
                               </p>
                             </div>
-                            <div className="flex gap-3 mt-4">
-                              <a
-                                href={item.link}
-                                target="_blank"
-                                className="icon"
-                              >
-                                <GrLinkedinOption />
-                              </a>
-                              {/* <a
-                                href={item.link}
-                                target="_blank"
-                                className="icon"
-                              >
-                                <BsInstagram className="text-pink-400" />
-                              </a> */}
-                              <a
-                                href={item.link}
-                                target="_blank"
-                                className="icon"
-                              >
-                                <FaTwitter />
-                              </a>
-                              
+                            <div className="flex gap-3 justify-center mt-4">
+                              <div className="bg-blue-700 p-1 rounded">
+                                <a
+                                  href={item.link}
+                                  target="_blank"
+                                >
+                                  <FaLinkedinIn className=" text-white h-7   w-7 self-center " />
+                                </a>
+                              </div>
+
+                              <div className="bg-green-400 p-1 rounded">
+                                {" "}
+                                <a href={item.upwork} target="_blank">
+                                  <SiUpwork className=" h-7 w-7 text-white  self-center " />
+                                </a>
+                              </div>
                             </div>
                           </Card.Text>
                         </Card.Body>
@@ -626,7 +617,7 @@ const About = () => {
                     ></path>
                   </svg>
                 </a>
-                <div className="row bg-sam mt-5">
+                <div className="row bg-sam mt-5 w-[100%] md:w-auto">
                   <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                     <p className="petro">Repaircms</p>
                     <p className="mt-2 Plat">

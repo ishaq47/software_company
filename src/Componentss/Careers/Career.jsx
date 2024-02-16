@@ -109,10 +109,10 @@ const Career = () =>{
                       to explore our current job openings and apply today. We
                       look forward to hearing from you!
                     </p>
-                    <div className=" pt-5 col-sm-12 ">
+                    <div className=" pt-4 col-sm-12 ">
                       {/* <button className="btns1 m-3">View our job openings <MdKeyboardArrowRight className="md_icon" /></button> */}
                       <button className="btns2 " onClick={handleShow}>
-                       <div >Send Resume </div> <MdSend className="md_icon" />
+                       <div  >Send Resume </div> <MdSend className="md_icon" />
                       </button>
                       <Modal show={show} onHide={handleClose}>
                         <Modal.Header closeButton>
