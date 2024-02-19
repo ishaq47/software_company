@@ -1,0 +1,53 @@
+
+.main-div {
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+    0 32px 64px -48px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.div-header p {
+  font-size: 18px;
+  color: #8a94a5;
+}
+.div-header h3 {
+  font-size: 30px;
+  color: #15284b;
+}
+.btns1 {
+  color: #e56700;
+  font-weight: 500;
+  font-size: 15px;
+  width: 235px;
+  height: 50px;
+  border-color: #e56700;
+  border-radius: 30px;
+  background-color: #fff;
+  transition: 0.5s;
+  border: 2px solid;
+}
+
+.btns1:hover {
+  background-color: #e56700;
+  color: #fff;
+}
+
+.btns2 {
+  color: goldenrod;
+  font-size: 15px;
+  width: auto;
+  text-wrap: nowrap;
+  padding: 15px 15px;
+  border-radius: 5px;
+  border-color:goldenrod;
+  background-color: #fff;
+  transition: 0.5s;
+  border: 2px solid;
+  display: flex;
+}
+
+.btns2:hover {
+  background-color: goldenrod;
+  color: #ffffff;
+}

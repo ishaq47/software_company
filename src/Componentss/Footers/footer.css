@@ -1,0 +1,98 @@
+.md_icon {
+  margin-left: 5px;
+}
+
+.footer-39201 h4 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-39201 .nav-links li {
+  display: block;
+}
+
+.footer-39201 .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-39201 .nav-links li a:hover {
+  color: goldenrod;
+  opacity: 0.3;
+}
+
+.contect-div .btn-jion {
+  width: 100px;
+  height: 45px;
+  background-color: goldenrod;
+  border-color: goldenrod;
+  border-radius: 20px;
+  color: #fff;
+  transition: 0.3s;
+  font-size: 15px;
+  font-weight: 600;
+  border: 2px solid goldenrod;
+}
+.contect-div .btn-jion:hover {
+  background-color: #fff;
+  color: goldenrod;
+  border-color: goldenrod;
+}
+
+.abs h3 {
+  margin-left: -3px;
+}
+
+/* 2nd footer   */
+
+.fot {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* padding-left: 50px; */
+}
+
+.fot a {
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.fot h4 {
+  color: #15284b;
+}
+
+.conicon {
+  font-size: 25px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.conicon:hover {
+  color: goldenrod;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 300px; */
+    height: 25px;
+}
+.logofot {
+  width: 120px;
+}
+/* .icon-inner span{
+background-color: #e56700;
+} */
+.loc p{
+  background-color: goldenrod;
+  border-radius: 50%;
+  border: 1px solid gray;
+  padding: 5px 8px;
+  font-size: 13px;
+}

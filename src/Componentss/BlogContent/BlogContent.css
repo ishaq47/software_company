@@ -1,0 +1,233 @@
+/* .class_blogc_a {
+  @apply w-full pb-10 bg-[#f9f9f9];
+  max-width: 1400px;
+  min-width: 775px;
+  width: 100%;
+}
+.class_blogc_b {
+  @apply max-w-[1240px] mx-auto;
+}
+.class_blogc_c {
+  @apply grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 
+    md:gap-x-8 sm:gap-y-8  sm:pt-20 md:mt-0;
+  @layer ss:grid-cols-1 ss:gap-y-8 px-4 ss:pt-20 text-black;
+}
+.class_blogc_c {
+  @layer ss:grid-cols-1 ss:gap-y-8 px-4 ss:pt-20 text-black;
+}
+
+.class_blogc_d {
+  @apply col-span-2;
+}
+
+.class_blogc_e {
+  @apply h-56 w-full object-cover;
+}
+
+.class_blogc_f {
+  @apply font-bold text-2xl my-1 pt-5;
+}
+
+.class_blogc_g {
+  @apply pt-5;
+}
+
+.class_blogc_h {
+  @layer line-break;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.class_blogc_i {
+  @apply items-center w-full bg-white rounded-xl drop-shadow-md py-5 max-h-[250px] flex flex-col items-center justify-center;
+  box-shadow: rgb(23 43 99 / 30%) 0 6px 18px;
+}
+
+.class_blogc_j {
+  @apply p-2 w-32 h-32 rounded-full mx-auto object-cover;
+}
+
+.class_blogc_k {
+  @apply font-bold text-2xl text-center text-gray-900 pt-3;
+}
+
+.class_blogc_m {
+  @apply text-center text-gray-900 font-medium;
+}
+@media (max-width: 768px) {
+  .class_blogc_i {
+    width: 135vh;
+  }
+}
+@media (max-width: 490px){
+.class_blogc_h{
+  font-size: 30px;
+  line-height: 52px;
+}
+} */
+
+/* .inam{
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: ;
+} */
+
+/* .class_blogc_a{
+  max-width: 1400px;
+  min-width: 775px;
+  width: 100%;
+  border: 2px solid;
+  padding: 0px 10px ;
+} */
+/* .class_blogc_b{
+  border: 2px solid;
+  width: 100%;
+  height: auto;
+} */
+/* .{
+  width: 100%;
+} */
+
+/* .class_blogc_c{
+  display: flex;
+  width: 100% !important;
+
+} */
+
+/* the above code this commit */
+
+.class_blogc_b_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 114px 50px;
+  background-color: #eeeeee;
+}
+.class_blogc_c-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 23px;
+}
+.class_blogc_d {
+  width: 73%;
+  height: auto;
+  padding: 40px 40px;
+  background-color: white;
+}
+.class_blogc_e-img {
+  width: 100%;
+}
+.class_blogc_m_img {
+  width: 100%;
+  height: auto;
+  display: contents;
+}
+
+.class_blogc_inner_i {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgb(23 43 99 / 30%);
+  box-shadow: rgb(23 43 99 / 30%) 0 6px 18px;
+  border-radius: 10px;
+  padding: 10px 0px 10px 0px;
+  width: 100%;
+  margin: auto;
+  background-color: white;
+}
+.class_blogc_j {
+  border-radius: 91px;
+  width: 34%;
+}
+.class_blogc_k {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  padding-top: 0.75rem;
+}
+.class_blogc_m {
+  font-weight: 500;
+}
+.class_blogc_e {
+  height: 14rem;
+  object-fit: cover;
+  width: 100%;
+}
+.class_blogc_f {
+  padding-top: 3rem;
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 47.6px;
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+  font-family: "Poppins";
+}
+.class_blogc_h {
+  font-size: 18px;
+  line-height: 30px;
+}
+.class_blogc_g {
+  padding-top: 25px;
+}
+.class_blogc_i {
+  width: 24%;
+}
+.class_blogc_m_img {
+  margin-bottom: 1rem;
+  margin-top: 0;
+  width: 100%;
+}
+.class_blogc_m_img svg {
+  width: 100% !important;
+}
+img,
+svg {
+  vertical-align: middle;
+  width: 100%;
+}
+.class_blogc_h p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 400;
+}
+.class_blogc_h h2 {
+  font-size: 28px !important;
+  line-height: 36px !important;
+  font-weight: 600 !important;
+  margin: 0px 0px 12px !important;
+}
+.class_blogc_h h3 {
+  font-size: 24px;
+  line-height: 38.8px;
+  font-weight: 600;
+  margin: 0px 0px 12px;
+}
+@media screen and (max-width: 900px) {
+  .class_blogc_b_container {
+    min-width: 254px;
+  }
+  .class_blogc_c-row {
+    flex-direction: column;
+  }
+
+  .class_blogc_d {
+    width: 100%;
+    height: auto;
+  }
+  .class_blogc_i {
+    height: auto;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .class_blogc_b_container {
+    padding: 61px 5px;
+  }
+  .class_blogc_d {
+    padding: 24px 17px;
+}
+}

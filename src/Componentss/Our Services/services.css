@@ -1,0 +1,132 @@
+.services {
+  font-size: 50px;
+  text-align: end;
+  margin-right: 5%;
+  margin-bottom: 10%;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .services {
+    text-align: start;
+  }
+  .pro h2 {
+    text-align: start;
+  }
+  .pro p {
+    text-align: start;
+  }
+}
+.servises-main {
+  background-image: url(/src/image/img2.webp);
+  /* width: 100%;
+    height: 100%; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  vertical-align: middle;
+}
+.we-services {
+  color: white;
+  text-align: start;
+}
+.dev-btn {
+  color: #e56700;
+  text-decoration: none;
+  font-weight: 500;
+}
+.head {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  font-size: 16px;
+  color: #7a82ab;
+  letter-spacing: 0.1em;
+}
+.head h2 {
+  font-size: 40px;
+}
+.soft-pro {
+  text-align: right;
+}
+.see-btn a {
+  transition: 0.5s;
+}
+.btn-my:hover {
+  color: #ffffff;
+}
+/* Card Css */
+.main {
+  background-color: #f6f7fa;
+  padding-top: 50px;
+}
+.soft h2 {
+  font-size: 40px;
+}
+.our-exp-p {
+  font-size: 40px;
+}
+.pro h2 {
+  font-size: 40px;
+}
+.talent h2 {
+  font-size: 40px;
+}
+.card-ser {
+  width: 100%;
+  height: 350px;
+  /* display: flex; */
+  flex-direction: column;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+    0 32px 64px -48px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.md_icon {
+  font-size: 20px;
+}
+.card-ser h3 {
+  font-size: 22px;
+  line-height: 32px;
+  color: #e56700;
+  padding: 0px 15px 0px 15px;
+}
+.card-ser span {
+  font-size: 16px;
+  color: #44546f;
+  padding: 0px 15px 0px 15px;
+  display: flex;
+}
+.card-ser img {
+  width: 65px;
+  padding-left: 13px;
+}
+
+.card-ser a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #f1860e;
+  justify-content: flex-start;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  border: none;
+  text-transform: uppercase;
+  background: none;
+  padding: 50px 15px 0px 15px;
+  font-weight: 700;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.card-ser h2:hover {
+  color: blue;
+}
+
+@media (min-width: 320px) and (max-width: 499px) {
+  .services {
+    text-align: center;
+  }
+  .soft-pro {
+    text-align: left;
+  }
+}
