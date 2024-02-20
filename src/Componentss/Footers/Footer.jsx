@@ -89,7 +89,7 @@ const Footers = () => {
                       &nbsp; &nbsp;
                       <div className="pt-1">
                         <a
-                          href="mailto:saudkhanbpk@gmail.com"
+                          href="mailto:contact@techcreator.co"
                           className="text-white"
                         >
                           contact@techcreator.co
@@ -111,22 +111,23 @@ const Footers = () => {
                         </a>
                       </div>
                     </div>
-                    <div className="mt-2 flex flex-col gap-2  ">
+                    <div className="mt-3 flex flex-col gap-2  ">
                       <div>
-                      <h5> Reach out to us on MENTOGA for consultation </h5>
+                      
                       <div className="flex gap-2  items-center">
                       <a href="https://mentoga.com/saudkhan" target="_blank">
-                       <button className=" text-blue-500 bg-white p-2 rounded-full animate-pulse w-full">MENTOGA</button>
+                       <button className=" text-white bg-yellow-600 px-4 py-2 rounded-full animate-pulse w-full">MENTOGA</button>
                       </a>
                       
                       <NavLink to="/caleneder"
                       className="relative">
-                        <button className=" text-blue-500 bg-white p-2 rounded-full animate-pulse w-full  ">
+                        <button className=" text-white bg-yellow-600 py-2 px-3 rounded-full animate-pulse w-full  ">
                           {" "}
                           MAKE APPOINTMENT{" "}
                         </button>
                         
                       </NavLink>
+                     
                       </div>
                       </div>
                     </div>

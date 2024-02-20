@@ -218,14 +218,14 @@ const About = () => {
             style={{ marginTop: "15%", marginBottom: "15%" }}
           >
             <Fade left delay={500} duration={3000}>
-              <div className="col-10 mx-auto">
+              <div className="col-10 mx-auto ">
                 <div className="row">
                   <div className="col-lg-5 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                     <h1 className="about">About Us</h1>
                   </div>
 
                   <div className="col-lg-7 col-md-12 col-sm-12 mb-5 ">
-                    <p className="we-about lead">
+                    <p className="we-about lead text-center">
                       At TechCreator, we pride ourselves on creating custom
                       software development solutions that help businesses
                       achieve their unique objectives. Our expertise in the

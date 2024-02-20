@@ -136,7 +136,7 @@ const Services = () => {
                   </div>
 
                   <div className="col-lg-7 col-md-12 col-sm-12 mb-5">
-                    <p className="we-services lead">
+                    <p className="we-services lead text-center">
                       TechCreator offers top-notch web and mobile app
                       development services to help businesses bring their ideas
                       to life. Our experienced team of developers creates custom

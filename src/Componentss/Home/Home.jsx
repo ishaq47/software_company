@@ -22,7 +22,7 @@ import { useNavigate } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import cardimg2 from "../../image/Patronlogo.png";
 import cardimg3 from "../../image/logo-white.png";
-
+import { NavLink } from "react-router-dom";
 const boxInfo = [
   {
     img: cardimg3,
@@ -70,7 +70,7 @@ const Home = () => {
             <div className="col-12 col-md-10 mx-auto home-main">
               <div className="container1">
           
-               <Fade left duration={2000}>
+               <Fade left duration={1000}>
                   <div className="min-head col-lg-12 col-m  d-10 col-sm-12 pt-5 pt-lg-0 d-flex justify-content-center flex-column text-center mt-[-80px] md:mt-0">
                     <h1 className="text-center   col-lg-7 align-center mx-auto">
                       We <span className="text-textColor">Automate</span> Your
@@ -95,7 +95,7 @@ const Home = () => {
                     </div>
                   </div>
                 </Fade>
-
+               
                 <div className="col-12 col-lg-8  lg:h-[400px] mx-auto col-md-12 col-sm-12 mb-5 animation">
                   <img
                     src={img1}
@@ -156,7 +156,7 @@ const Home = () => {
           <div className="row">
             <div className="col-10 mx-auto">
               <div className="row abs">
-                <Fade bottom delay={500} duration={3000}>
+                <Fade bottom delay={500} duration={1000}>
                   <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column  fade__bottom">
                     <h2 className="mt-3 Develop">
                       Innovative Software Solutions

@@ -12,6 +12,8 @@ import useFetch from "../src/hooks/useFetcgh";
 import Post from "./Componentss/Post/Post";
 import Caleneder from "./Caleneder";
 import Socialicon from "./Componentss/Socialicon";
+import Meeting from "./Componentss/Meeting";
+
 const RouterPage = () => {
 
 
@@ -24,6 +26,7 @@ const RouterPage = () => {
       <Scrolltoup />
       <TopNav />
       <Socialicon/>
+      
       {/* Frontity Menu Link */}
       <Routes>
         {/* React Router Routes */}
@@ -34,8 +37,7 @@ const RouterPage = () => {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/post/:slug" element={<Post />} />
         <Route path="/caleneder" element={<Caleneder />} />
-
-
+        <Route path="/meeting" element={<Meeting />} />
         {/* <Route path="/blog" element={<Blog blogs={data ? data : ""} />} /> */}
         <Route path="/blog" element={<Blog />} />
         {/* <Route

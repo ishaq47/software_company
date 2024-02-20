@@ -15,6 +15,10 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import * as yup from "yup";
 import { ImWhatsapp } from "react-icons/im";
+import { NavLink } from "react-router-dom";
+import { InlineWidget } from "react-calendly";
+import SimplyBookWidget from "../../SimplyBookWidge";
+import Meeting from "../Meeting";
 const initialValues = {
   name: "",
   email: "",
@@ -77,9 +81,11 @@ const Contact = () => {
     document.getElementById("location").value = "";
     document.getElementById("message").value = "";
   };
+ 
 
   return (
     <>
+     
       <Helmet>
         <title>Contact - Techcreator Software Company</title>
         <meta
@@ -127,7 +133,7 @@ const Contact = () => {
               <div className="col-10 mx-auto">
                 <div className="row">
                   <div className="col-lg-5 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-                    <h1 className="contact">Contact Us</h1>
+                    <h1 className="contact" >Contact Us</h1>
                   </div>
 
                   <div className="col-lg-7 col-md-12 col-sm-12 mb-5 cont-head">
@@ -136,13 +142,24 @@ const Contact = () => {
                       We are here to respond on your querries.
                     </p>
                   </div>
+
+                  <div className=" flex justify-center w-[400px]">
+                    <button className="relative bottom-10 bg-yellow-600 p-2 rounded-full animate-pulse w-[200px]  ">
+                         <NavLink to="/meeting"
+                         className=" text-white ">
+                          BOOK MEETING{" "}
+                          </NavLink>
+                          </button> 
+                   
+                   
+                  </div>
                 </div>
               </div>
             </Fade>
           </div>
         </div>
       </section>
-
+      
       <div className="container-fluid">
         <div className="row">
           <div className="col-8 mx-auto">
@@ -361,8 +378,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
       <Footers />
+    
     </>
   );
 };

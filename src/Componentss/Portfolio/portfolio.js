@@ -324,7 +324,7 @@ const Portfolio=()=>{
                   </div>
           
                   <div className="col-lg-7 col-md-12 col-sm-12 mb-5">
-                    <p className="we-about lead">
+                    <p className="we-about lead text-center">
                     At TechCreator Software Company, we specialize in crafting bespoke software solutions that cater to your unique business needs. Our portfolio showcases a range of successful projects, from intuitive mobile apps to dynamic web platforms. With a talented team dedicated to quality and innovation, we're your partner in turning ideas into impactful realities. Join us in the journey of transforming your vision into cutting-edge technology.
                     </p>
                   </div>

@@ -66,9 +66,9 @@
 	background-color:goldenrod ;
 	color: white;
 	
-	border-radius: 5px;
+	border-radius: 3px;
 }
 .btn-nav:hover{
 	color: white;
-	background-color: rgb(240, 178, 22) ;
+	background-color: rgb(216, 163, 30) ;
 }
