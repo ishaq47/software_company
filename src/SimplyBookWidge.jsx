@@ -1,15 +1,11 @@
 // SimplyBookWidget.js
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
+
 const SimplyBookWidget = () => {
-  useEffect(() => {
-
-  }, []);
-
   return (
     <Helmet key="simplyBookWidget">
-
-      <script src="//widget.simplybook.asia/v2/widget/widget.js" type="text/javascript"></script>
+      <script src="//widget.simplybook.asia/v2/widget/widget.js" type="text/javascript" />
       <script type="text/javascript">
         {`
           var widget = new SimplybookWidget({

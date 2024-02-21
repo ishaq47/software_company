@@ -174,7 +174,7 @@ const Home = () => {
                   </div>
                 </Fade>
                 <div className="col-lg-5 col-md-12 col-sm-12  header-img mb-5">
-                  <Fade right duration={2000}>
+                  <Fade right duration={1000}>
                     <div className="img11"></div>
                     <div className="img8">
                       <img
@@ -207,7 +207,7 @@ const Home = () => {
             <div className="col-10 mx-auto mt-5">
               <div className="row">
                 <div className="col-lg-5 col-md-12 col-sm-12 pt-5 header-img">
-                  <Fade left duration={2000}>
+                  <Fade left duration={1000}>
                     <div className="img12"></div>
                     <div className="img9">
                       <img
@@ -232,7 +232,7 @@ const Home = () => {
                     </div>
                   </Fade>
                 </div>
-                <Fade bottom delay={500} duration={3000}>
+                <Fade bottom delay={500} duration={1000}>
                   <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex    flex-column">
                     <h2 className="mt-5 Develop">
                       Software Products Discovery
@@ -255,7 +255,7 @@ const Home = () => {
           <div className="row mt-5">
             <div className="col-10 mx-auto mt-5">
               <div className="row abs">
-                <Fade bottom delay={500} duration={3000}>
+                <Fade bottom delay={500} duration={1000}>
                   <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
                     <h2 className="mt-3 Develop">Talent Augmentation</h2>
                     <p className="mt-5 Over">
@@ -324,7 +324,7 @@ const Home = () => {
           </div>
 
           <div className="row mt-5 backgimg text-white  rounded">
-            <Fade bottom duration={2000}>
+            <Fade bottom duration={1000}>
               <div className="col-10 mx-auto mt-5">
                 <h2 className=" text-center here">
                   Here are our services in action
@@ -382,7 +382,7 @@ const Home = () => {
           </div>
 
           <div className="row text-white  rounded">
-            <Fade bottom delay={500} duration={2000}>
+            <Fade bottom delay={500} duration={1000}>
               <div className="col-10 mx-auto">
                 <div className="row bg-sam mt-5">
                   <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
@@ -412,7 +412,7 @@ const Home = () => {
         </div>
       </section>
 
-      <Fade bottom duration={2000}>
+      <Fade bottom duration={1000}>
         <div className="col-md-12 clint-div text-center pt-5 my-5">
           <h2>CLIENT TESTIMONIALS</h2>
           <h3>What they say about us</h3>
@@ -424,7 +424,7 @@ const Home = () => {
           <div className="row ">
             {boxInfo.map((item) => {
               return (
-                <Fade bottom duration={2000} >
+                <Fade bottom duration={1000} >
                   <div className="col-md-6  col-lg-4 py-5">
                     <div className="box p-3 bg-white text-dark">
                       <img src={item.img} className=" img-div pt-2" />
@@ -479,7 +479,7 @@ const Home = () => {
               </Fade>
             </div>
             <div className="row">
-              <Fade bottom duration={2000}>
+              <Fade bottom duration={1000}>
                 <Marquee gradient={false} speed={40} className="pt-5 marque">
                   <div className="col img-wrapper">
                     <img src={imgs2} alt="TechCreator" />
@@ -505,7 +505,7 @@ const Home = () => {
 
       <div className="container-fluid mains">
         <div className="row">
-          <Fade bottom duration={2000}>
+          <Fade bottom duration={1000}>
             <div className="col-10 mx-auto ">
               <div className="row">
                 <div className="col-lg-12 col-md-12 col-sm-12 pt-5 pt-lg-0  proj-header ">

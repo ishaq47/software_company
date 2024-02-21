@@ -89,7 +89,7 @@ const Career = () =>{
     <>
       <div className="container-fluid bg-white py-5 ">
         <ToastContainer />
-        <Fade bottom duration={2000}>
+        <Fade bottom duration={1000}>
           <div className="container  main-div">
             <div className="row">
               <div className="col-10 mx-auto">

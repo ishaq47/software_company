@@ -42,13 +42,7 @@ const Portfolio=()=>{
   const [currentPage, setCurrentPage] = useState(1);
   
     const projectInfo = [
-        // {
-        //   img: imgpro1,
-        //   link: "https://www.travcont.com/",
-        //   head: "Travcont",
-        //   para: "Travcont provide complete satisfaction for every traveler. We recognize that good service is more than competitive pricing",
-        //   btn: "Go To Website",
-        // },
+      
         {
           img: imgpro2,
           link: "https://risetech.pk/",
@@ -84,13 +78,7 @@ const Portfolio=()=>{
           para: "Bubbles Laundry may need to upgrade its laundry facilities to improve the quality of its services and increase efficiency. ",
           btn: "Go To Website",
         },
-        // {
-        //   img: imgpro7,
-        //   link: "https://www.behance.net/gallery/89606661/Mosafir-App-for-Mobilink-Jazz?tracking_source=project_owner_other_projects",
-        //   head: "Musafir App",
-        //   para: "Musafir App is easy to use for booking both International as well as domestic flights, hotel bookings, holidays & packages booking",
-        //   btn: "Go To Website",
-        // },
+      
         {
           img: imgpro8,
           link: "https://www.behance.net/gallery/92140709/Gratitude",
@@ -119,13 +107,6 @@ const Portfolio=()=>{
           para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
           btn: "Go To Website",
         },
-        // {
-        //   img: imgpro12,
-        //   link: "https://khpalmart.com/",
-        //   head: "Khpal Mart",
-        //   para: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
-        //   btn: "Go To Website",
-        // },
         {
           img: imgpro13,
           link: "http://www.patronworks.net/home",
@@ -279,14 +260,7 @@ const Portfolio=()=>{
           head: "Yacht Management Services",
           para: "A-Team Captains Yacht Management Services Newest Headquarters is located in Fort Pierce, next to Derecktors....",
           btn: "Go To Website",
-        },
-        // {
-        //   img: imgpro22,
-        //   link: "https://repaircms.com/en/",
-        //   head: "Repair CMS",
-        //   para: "RepairCMS is a repair management solution for cell phone and computer repair shops and can be used in many other repair industries too.",
-        //   btn: "Go To Website",
-        // },
+        }
       ];
       const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
@@ -316,7 +290,7 @@ const Portfolio=()=>{
             className="row"
             style={{ marginTop: "15%", marginBottom: "15%" }}
           >
-            <Fade left delay={500} duration={3000}>
+            <Fade left delay={500} duration={1000}>
               <div className="col-10 mx-auto">
                 <div className="row">
                   <div className="col-lg-5 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">

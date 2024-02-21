@@ -128,7 +128,7 @@ const Services = () => {
             style={{ marginTop: "15%", marginBottom: "15%" }}
           >
       
-            <Fade left delay={500} duration={3000}>
+            <Fade left delay={500} duration={1000}>
               <div className="col-10 mx-auto">
                 <div className="row">
                   <div className="col-lg-5 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
@@ -158,116 +158,10 @@ const Services = () => {
         </div>
       </section>
 
-      {/* <div class="container col-xxl-8 ">
-        <div class="row flex-lg-row align-items-center g-md-5 my-5">
-          <div class="col-10 col-sm-8 col-lg-6 dev-img">
-            <Fade left duration={2000}>
-              <div>
-                <img src={imgdev} class="img-fluid d-block mx-lg-auto" />
-              </div>
-            </Fade>
-          </div>
-          <div class="col-lg-6">
-            <Fade bottom duration={2000}>
-              <div className="soft">
-                <h2 class=" display-5 fw-bold lh-1 mb-3 text-primary">
-                  TechCreator Software
-                  <br /> Development
-                </h2>
-                <p class="lead">
-                  At TechCreator, we provide software development services using
-                  cutting-edge technologies such as{" "}
-                  <a href="https://reactjs.org/">ReactJs</a>, Angular, and
-                  WordPress.Whether it's building a website with WordPress,
-                  developing a single-page application with React, or creating a
-                  robust enterprise application with{" "}
-                  <a href="https://angular.io/">Angular</a>, we have the
-                  expertise to deliver high-quality solutions that exceed
-                  your expectations.
-                </p>
-                
-              </div>
-            </Fade>
-          </div>
-        </div>
-      </div>
-
-      <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-md-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6 dev-img1">
-            <Fade right duration={2000}>
-              <div>
-                <img src={imgdescover} class="d-block mx-lg-auto img-fluid " />
-              </div>
-            </Fade>
-          </div>
-
-          <div class="col-lg-6 soft-pro">
-            <Fade bottom duration={2000}>
-              <div className="pro">
-                <h2 class="display-5 fw-bold lh-1 mb-3 text-primary">
-                  TechCreator Software
-                  <br />
-                  Product Discovery
-                </h2>
-                <p class="lead">
-                  TechCreator provides{" "}
-                  <a href="https://relevant.software/software-product-discovery/">
-                    software product discovery services{" "}
-                  </a>{" "}
-                  to help businesses identify and validate opportunities for new
-                  software products. Whether you're looking to develop a new
-                  product from scratch or improve an existing one, We can help
-                  you identify and validate the best opportunities.{" "}
-                  <a href="https://techcreator.co/contact">Contact us </a>
-                  today to learn more about our software product
-                  discovery services.
-                </p>
-                
-              </div>
-            </Fade>
-          </div>
-        </div>
-      </div>
-
-      <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row align-items-center g-md-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6 dev-img2">
-            <Fade left duration={2000}>
-              <div>
-                <img src={imgdev} class="d-block mx-lg-auto img-fluid " />
-              </div>
-            </Fade>
-          </div>
-          <div class="col-lg-6 pb-5">
-            <Fade bottom>
-              <div className="talent">
-                <h2 class="display-5 fw-bold lh-1 mb-3 text-primary">
-                  TechCreator Talent
-                  <br /> Augmentation
-                </h2>
-                <p class="lead">
-                  We offer talent augmentation services to help software
-                  companies augment their existing teams with skilled and
-                  experienced developers. Whether you need additional resources
-                  for a short-term project or long-term support,{" "}
-                  <a href="https://techcreator.co/about">
-                    <b>TechCreator</b>
-                  </a>{" "}
-                  can help you augment your team with top-notch talent. Contact
-                  us today to learn more about our talent augmentation services.
-                </p>
-                
-              </div>
-            </Fade>
-          </div>
-        </div>
-      </div> */}
-
       {/* Card Jsx */}
       <section className="main">
         <div className="container">
-          <Fade bottom duration={2000}>
+          <Fade bottom duration={1000}>
             <div className="head">
               <h2 className="display-5 fw-bold lh-1 mb-3 text-primary ">
               Our Service
