@@ -217,7 +217,7 @@ const About = () => {
             className="row"
             style={{ marginTop: "15%", marginBottom: "15%" }}
           >
-            <Fade left delay={500} duration={3000}>
+            <Fade left delay={500} duration={1000}>
               <div className="col-10 mx-auto ">
                 <div className="row">
                   <div className="col-lg-5 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">

@@ -73,16 +73,6 @@ const Career = () =>{
         console.log(err);
         setLoader(false);
       });
-    // }).then((response) => {
-    //   return console.log("response :", response);
-    //   console.log(response);
-
-    //   if (response.ok) {
-    //     return response.json();
-    //   }
-    //   throw new Error(`Network response was not ok: ${response.status}`);
-    // });
-    // return console.log("file url :", fileUrl);
   };
 
   return (

@@ -2,7 +2,7 @@ import "./portfolio.css";
 import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
 // import "react-paginate/dist/react-paginate.css";
-import Fade from "react-reveal/Fade";
+import Fade from  "react-reveal/Fade";
 import Career from "../Careers/Career";
 import Footers from "../Footers/Footer";
 import { Helmet } from "react-helmet"

@@ -21,7 +21,7 @@ const Footers = () => {
             <div className="row">
               <div className="col-md-4">
                 <NavLink to="/">
-                  <img src={logofot} className="logofot" />
+                  <img src={logofot} className="logofot mb-8" />
                 </NavLink>
                 <p className="">
                   We have been providing quality services since 2001. We provide

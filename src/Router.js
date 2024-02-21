@@ -36,14 +36,10 @@ const RouterPage = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/post/:slug" element={<Post />} />
-        <Route path="/caleneder" element={<Caleneder />} />
+        <Route path="/caleneder" element={<Caleneder/>} />
         <Route path="/meeting" element={<Meeting />} />
-        {/* <Route path="/blog" element={<Blog blogs={data ? data : ""} />} /> */}
         <Route path="/blog" element={<Blog />} />
-        {/* <Route
-          path="/blogc/:id"
-          element={<BlogContentPage blogs={data ? data : ""} />}
-        /> */}
+       
       </Routes>
     </BrowserRouter>
   );
