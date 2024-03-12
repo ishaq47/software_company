@@ -125,7 +125,7 @@ const Services = () => {
         <div className="container-fluid ">
           <div
             className="row"
-            style={{ marginTop: "15%", marginBottom: "15%" }}
+            style={{ marginTop: "8%", marginBottom: "5%" }}
           >
       
             <Fade left delay={500} duration={1000}>
@@ -136,7 +136,7 @@ const Services = () => {
                   </div>
 
                   <div className="col-lg-7 col-md-12 col-sm-12 mb-5">
-                    <p className="we-services lead text-center">
+                    <p className="we-services lead ">
                       TechCreator offers top-notch web and mobile app
                       development services to help businesses bring their ideas
                       to life. Our experienced team of developers creates custom
@@ -172,7 +172,7 @@ const Services = () => {
             {cardInfo.map((item) => {
               return (
                 <Fade bottom duration={1000}>
-                  <div className="col-md-6 col-lg-4 py-5">
+                  <div className="col-md-6 col-lg-4 p-3">
                     <div className="card-ser p-4 bg-white text-dark">
                       <img src={item.img} className="pt-3" />
                       <h3 className="pt-4">{item.header}</h3>
@@ -186,8 +186,6 @@ const Services = () => {
           </div>
         </div>
       </section>
-      <Career />
-      <Footers />
     </>
   );
 };

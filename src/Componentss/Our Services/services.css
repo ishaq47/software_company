@@ -30,6 +30,11 @@
   color: white;
   text-align: start;
 }
+@media screen and (max-width:499px) {
+  .we-services {
+    text-align: center;
+  }
+}
 .dev-btn {
   color: #e56700;
   text-decoration: none;

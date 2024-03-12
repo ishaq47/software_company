@@ -51,7 +51,7 @@ const BlogContent = ({ blogs }) => {
         </div>
       </div>
       {/* </div> */}
-      {/* <Footers /> */}
+
     </>
   );
 };

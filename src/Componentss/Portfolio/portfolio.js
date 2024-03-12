@@ -36,6 +36,7 @@ import imgpro30 from "../../image/image30.PNG";
 import imgpro31 from "../../image/image31.PNG";
 import imgpro32 from "../../image/image32.PNG";
 import imgpro33 from "../../image/image33.PNG";
+// import repairimg from '../../image/repaircms.jpeg'
 const Portfolio=()=>{
 
   const itemsPerPage = 12;
@@ -288,7 +289,7 @@ const Portfolio=()=>{
         <div className="container-fluid ">
           <div
             className="row"
-            style={{ marginTop: "15%", marginBottom: "15%" }}
+            style={{ marginTop: "8%", marginBottom: "5%" }}
           >
             <Fade left delay={500} duration={1000}>
               <div className="col-10 mx-auto">
@@ -298,7 +299,7 @@ const Portfolio=()=>{
                   </div>
           
                   <div className="col-lg-7 col-md-12 col-sm-12 mb-5">
-                    <p className="we-about lead text-center">
+                    <p className="we-about lead justify-center  items-center ">
                     At TechCreator Software Company, we specialize in crafting bespoke software solutions that cater to your unique business needs. Our portfolio showcases a range of successful projects, from intuitive mobile apps to dynamic web platforms. With a talented team dedicated to quality and innovation, we're your partner in turning ideas into impactful realities. Join us in the journey of transforming your vision into cutting-edge technology.
                     </p>
                   </div>
@@ -357,9 +358,30 @@ const Portfolio=()=>{
             activeClassName={"pagination__link--active"}
           />
         </div>
+        {/* <div className="row bg-sam mt-5 w-[100%] md:w-auto">
+                  <div className="col-lg-7 col-md-12 col-sm-12 pt-3 pt-lg-0  d-flex justify-content-center flex-column">
+                    <p className="petro">Repaircms</p>
+                    <p className=" Plat">
+                      TechCreator created a platform that led Repaircms to its
+                      digital transformation process
+                    </p>
+                    <p className="we lead">
+                      TechCreator's innovative software solutions have helped us
+                      streamline our operations and improve our
+                      customer service.
+                    </p>
+                  </div>
+                  <div className="col-lg-5 col-md-12 col-sm-12 header-img">
+                    <div className="img13 mt-3">
+                      <img
+                        src={repairimg}
+                        className="img-fluid pt-5"
+                        alt="TechCreator Software House"
+                      />
+                    </div>
+                  </div>
+                </div> */}
       </div>
-      <Career />
-      <Footers />
         </>
     )
 }

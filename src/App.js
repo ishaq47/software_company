@@ -15,7 +15,7 @@ function App() {
   }, []);
  
   return (
-    <>
+    <> 
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify({

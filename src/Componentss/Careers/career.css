@@ -16,12 +16,12 @@
   color: #15284b;
 }
 .btns1 {
-  color: #e56700;
+  color: blueviolet;
   font-weight: 500;
   font-size: 15px;
   width: 235px;
   height: 50px;
-  border-color: #e56700;
+  border-color: blueviolet;
   border-radius: 30px;
   background-color: #fff;
   transition: 0.5s;
@@ -29,25 +29,28 @@
 }
 
 .btns1:hover {
-  background-color: #e56700;
+  background-color: blueviolet;
   color: #fff;
 }
 
 .btns2 {
-  color: goldenrod;
+  color: white;
   font-size: 15px;
   width: auto;
   text-wrap: nowrap;
   padding: 15px 15px;
   border-radius: 5px;
-  border-color:goldenrod;
-  background-color: #fff;
+  margin-bottom: 15px;
+  
+  background-color: blueviolet;
   transition: 0.5s;
-  border: 2px solid;
+  /* border: 2px solid; */
   display: flex;
 }
 
 .btns2:hover {
-  background-color: goldenrod;
+  background-color: rgb(157, 86, 223);
   color: #ffffff;
+  font-weight: 500;
+  scale: 1.1;
 }

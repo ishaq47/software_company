@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./TopNav.css";
-import logo from "../image/techlogo.png";
+import logo from "../image/logol.png";
 
 const TopNav = () => {
   const menuData = [
@@ -21,12 +21,20 @@ const TopNav = () => {
       name: "Services",
     },
     {
+      path: "/pri",
+      name: "Pricing",
+    },
+    {
       path: "/blog",
       name: "Blog",
     },
     {
       path: "/portfolio",
       name: "Portfolio",
+    },
+    {
+      path: "/career",
+      name: "Career",
     },
   ];
 
@@ -45,17 +53,20 @@ const TopNav = () => {
       <Navbar
         expand="lg"
         fixed="top"
-        className="main-nav bg-blue-500 py-2 bg-[#00000]"
+        className="main-nav bg-black py-2 "
       >
         <Container>
-          <NavLink to="/" className="logo ">
+          <NavLink to="/" className="logo flex ">
             <img src={logo} alt="logo" />
+            <span className=" cursor-pointer lh-1 self-center logop ">TECH<br/>CREATOR</span>
           </NavLink>
+         
+         
 
-          <Navbar.Toggle onClick={handleToggle} />
+          <Navbar.Toggle className="bg-white"   onClick={handleToggle} />
 
-          <Navbar.Collapse in={open}>
-            <Nav className="ms-auto">
+          <Navbar.Collapse  in={open}>
+            <Nav className="ms-auto nav1">
               {menuData.map((item) => (
                 <NavLink
                   to={item.path}

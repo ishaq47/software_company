@@ -13,6 +13,10 @@ import Post from "./Componentss/Post/Post";
 import Caleneder from "./Caleneder";
 import Socialicon from "./Componentss/Socialicon";
 import Meeting from "./Componentss/Meeting";
+import {  ThreeDots } from "react-loader-spinner";
+import Pricing from "./Componentss/Pricing/Pricing";
+import Career from "./Componentss/Careers/Career";
+import Footers from "./Componentss/Footers/Footer";
 
 const RouterPage = () => {
 
@@ -20,7 +24,17 @@ const RouterPage = () => {
   let { loading } = useFetch(
     `${process.env.REACT_APP_STRAPI_URL}/api/blogs?populate=*`
   );
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <div className="flex justify-center h-screen items-center"><ThreeDots
+  visible={true}
+  height="80"
+  width="80"
+  color="blue"
+  radius="9"
+  ariaLabel="three-dots-loading"
+  wrapperStyle={{}}
+  wrapperClass=""
+  />
+    </div>
   return (
     <BrowserRouter>
       <Scrolltoup />
@@ -39,8 +53,12 @@ const RouterPage = () => {
         <Route path="/caleneder" element={<Caleneder/>} />
         <Route path="/meeting" element={<Meeting />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/pri" element={<Pricing/>} />
+        <Route path="/career" element={<Career/>} />
+
        
       </Routes>
+      <Footers/>
     </BrowserRouter>
   );
 };

@@ -8,7 +8,14 @@ import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-const Career = () =>{
+import collobrate from "../../image/collabrate.jpg"
+import dev from "../../image/dev.jpg"
+import inno from "../../image/inno.jpg"
+import gimpact from "../../image/gimpact.jpg"
+
+
+
+const Career = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -26,11 +33,12 @@ const Career = () =>{
       !firstName ||
       !lastName ||
       !email ||
-      !profile_URL ||
-      !phone ||
+      // !profile_URL ||
+      // !phone ||
       !fileCv
     ) {
       return toast.error("please fill the form");
+  
     }
     setLoader(true);
     const data = new FormData();
@@ -72,12 +80,16 @@ const Career = () =>{
       .catch((err) => {
         console.log(err);
         setLoader(false);
+        
+        
+        
+
       });
   };
 
   return (
     <>
-      <div className="container-fluid bg-white py-5 ">
+      <div className="container-fluid bg-black mt-[-30px] md:mt-0">
         <ToastContainer />
         <Fade bottom duration={1000}>
           <div className="container  main-div">
@@ -85,7 +97,7 @@ const Career = () =>{
               <div className="col-10 mx-auto">
                 <div className="row">
                   <div className="col-lg-6 col-md-12 col-sm-12 pt-5 pt-lg-0 div-header  d-flex justify-content-center flex-column">
-                    <h2>Careers at TechCreator</h2>
+                    <h1 className="text-white">Careers at TechCreator</h1>
 
                     <p className="careers-p pt-3">
                       Are you passionate about technology and innovation? Do you
@@ -102,7 +114,7 @@ const Career = () =>{
                     <div className=" pt-4 col-sm-12 ">
                       {/* <button className="btns1 m-3">View our job openings <MdKeyboardArrowRight className="md_icon" /></button> */}
                       <button className="btns2 " onClick={handleShow}>
-                       <div  >Send Resume </div> <MdSend className="md_icon" />
+                        <div  >Send Resume </div> <MdSend className="md_icon" />
                       </button>
                       <Modal show={show} onHide={handleClose}>
                         <Modal.Header closeButton>
@@ -190,7 +202,7 @@ const Career = () =>{
                             </Button>
                           ) : (
                             <Button
-                              className="btn btn-primary"
+                              className="btn hover:font-semibold btn-primary"
                               onClick={submit_btn}
                             >
                               Submit
@@ -216,6 +228,76 @@ const Career = () =>{
             </div>
           </div>
         </Fade>
+
+      </div>
+      <div>
+        <div className="flex flex-col justify-center items-center  pt-10 ">
+          <h1 className='flex justify-self-center text-center text-3xl md:text-4xl font-semibold'>Where Innovation Meets Ambition!</h1>
+          <p className='flex justify-self-center md:w-[800px] lg:w-[1000px] lead text-center mx-4 ' >Welcome to a world of limitless possibilities! At TechCreator, we don't just offer jobs; we offer careers that propel you towards unparalleled growth and success. Join us on a journey where your passion meets purpose, and every challenge is an opportunity to shine.</p>
+        </div>
+        <div>
+          <div className="flex flex-col ">
+            <h2 className=" flex items-center justify-center my-5">Why TechCreator?</h2>
+            <div className="flex flex-col items-center  ">
+            <div className="sm:grid grid-cols-2 mx-4 my-3 ">
+              <div className="  md:w-[400px] flex flex-col items-center justify-center md:mr-[100px]  text-center ">
+                <h3> Innovation at the Core</h3>
+                <p className="lead" >At TechCreator, we foster a culture of innovation. Our team is at the forefront of the latest technological advancements, working on projects that push the boundaries of what's possible. Join us, and be a part of a company that values creativity and encourages out-of-the-box thinking.
+
+                </p>
+              </div>
+              <div className="sm:w-[350px] md:w-[400px] ">
+                <img className="flex md:ml-[100px]  rounded-2xl " src={inno} />
+
+              </div>
+
+            </div>
+            <div className="flex flex-wrap-reverse sm:grid grid-cols-2 mx-4 my-3">
+              <div className="sm:w-[350px] md:w-[400px] ">
+                <img className="  rounded-2xl" src={collobrate} />
+
+              </div>
+              <div className="  md:w-[400px] flex flex-col items-center justify-center md:ml-[100px]  text-center">
+                <h3>Collaborative Environment</h3>
+                <p className="lead" >We believe that great ideas come from collaboration. Our inclusive and supportive work environment encourages open communication and teamwork. At TechCreator, you'll have the opportunity to collaborate with talented individuals from diverse backgrounds, each bringing unique perspectives to the table.
+
+                </p>
+              </div>
+
+
+            </div>
+            <div className="flex flex-wrap sm:grid grid-cols-2 mx-4 my-3">
+             
+              <div className="  md:w-[400px] flex flex-col items-center justify-center md:mr-[100px]  text-center">
+                <h3> Professional Growth</h3>
+                <p className="lead" > TechCreator is committed to the continuous development of its team members. We provide opportunities for skill enhancement, training programs, and mentorship to ensure that our employees are always at the forefront of their fields. Your professional growth is our priority.
+
+
+                </p>
+              </div>
+              <div className="sm:w-[350px]  md:w-[400px] ">
+                <img className="flex md:ml-[100px]  rounded-2xl " src={dev} />
+
+              </div>
+
+            </div>
+            <div className="flex flex-wrap-reverse sm:grid grid-cols-2 mx-4 my-3">
+              <div className="sm:w-[350px] md:w-[400px] ">
+                <img className="  rounded-2xl" src={gimpact} />
+
+              </div>
+              <div className="  md:w-[400px] flex flex-col items-center justify-center md:ml-[100px]  text-center">
+                <h3>Impactful Projects</h3>
+                <p className="lead" >Join TechCreator, and you'll have the chance to work on projects that make a difference. Whether it's web development, app creation, or software solutions, our team is dedicated to delivering high-impact results that leave a lasting mark on the tech industry.
+
+                </p>
+              </div>
+
+
+            </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

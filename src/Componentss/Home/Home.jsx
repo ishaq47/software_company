@@ -11,35 +11,74 @@ import patronimg from "../../image/petron.png";
 import "./home.css";
 import { Helmet } from "react-helmet";
 import Marquee from "react-fast-marquee";
-import image4 from "../../image/quote.webp";
 import imgs2 from "../../image/Patronlogo.png";
 import imgs3 from "../../image/logo-white.png";
 import imgs5 from "../../image/BelgiumImmo.png";
 import imgs7 from "../../image/twitter.png";
-import Career from "../Careers/Career";
-import Footers from "../Footers/Footer";
 import { useNavigate } from "react-router-dom";
 import Fade from "react-reveal/Fade";
-import cardimg2 from "../../image/Patronlogo.png";
-import cardimg3 from "../../image/logo-white.png";
-import { NavLink } from "react-router-dom";
-const boxInfo = [
-  {
-    img: cardimg3,
-    para: "TechCreator's innovative software solutions have helped us streamline our operations and improve our customer service.",
-    link: "Zafar",
-    span: " CEO",
-  },
-  {
-    img: cardimg2,
-    para: "We were hesitant to switch to a new POS system, but we are so glad we chose Techcreator.",
-    link: "Norman moore",
-    span: "CTO",
-  },
-];
+import ss from "../../image/ss.jpg"
+
+import first from "../../image/Screenshot 2024-03-04 at 10.37.59 PM (1).png"
+import second from "../../image/Screenshot 2024-03-04 at 10.38.13 PM.png"
+import third from "../../image/Screenshot 2024-03-04 at 10.38.27 PM.png"
+import fourth from "../../image/Screenshot 2024-03-04 at 10.38.53 PM.png"
+import Slider from "react-slick";
+// const boxInfo = [
+//   {
+//     img: cardimg3,
+//     para: "TechCreator's innovative software solutions have helped us streamline our operations and improve our customer service.",
+//     link: "Zafar",
+//     span: " CEO",
+//   },
+//   {
+//     img: cardimg2,
+//     para: "We were hesitant to switch to a new POS system, but we are so glad we chose Techcreator.",
+//     link: "Norman moore",
+//     span: "CTO",
+//   },
+// ];
 
 const Home = () => {
   const navigate = useNavigate();
+  let seetings = {
+
+    Infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slideToScroll: 1,
+    autoplay: true, // Add autoplay option
+    autoplaySpeed: 5000, // Set autoplay speed to 10 seconds (10000 milliseconds)
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+        },
+      },
+    ],
+  };
 
   return (
     <>
@@ -63,29 +102,28 @@ const Home = () => {
       </Helmet>
       <section
         id="header"
-        className="d-flex align-items-center homeimg text-white"
+        className="d-flex align-items-center homeimg text-white "
       >
         <div className="container-fluid">
-          <div className="row">
+          <div className="row ">
             <div className="col-12 col-md-10 mx-auto home-main">
               <div className="container1">
-          
-               <Fade left duration={1000}>
+                <Fade left duration={1000}>
                   <div className="min-head col-lg-12 col-m  d-10 col-sm-12 pt-5 pt-lg-0 d-flex justify-content-center flex-column text-center mt-[-80px] md:mt-0">
-                    <h1 className="text-center   col-lg-7 align-center mx-auto">
+                    <p className=" text-3xl md:text-6xl maintext   col-lg-8 align-center mx-auto">
                       We <span className="text-textColor">Automate</span> Your
                       Business With
                       <span className="text-textColor">
                         {" "}
                         Software Solutions
                       </span>
-                    </h1>
-                    <p className="pt-3 lead col-lg-10 self-center mx-3 md:mx-0 ">
+                    </p>
+                    <p className="pt-3 text-xl col-lg-10 self-center mx-3 md:mx-0 ">
                       At TechCreator, We Don't Just Understand Business - We
                       Anticipate its Needs. Our Mission is to Empower Your
                       Growth Journey With Cutting-Edge Automation Solutions.
                     </p>
-                    <div className="mt-3 col-sm-6 d-flex col-lg-12 justify-content-center">
+                    <div className="mt-3 col-sm-6 d-flex col-lg-12 justify-content-center items-center self-center">
                       <button
                         className="btn btn-con1"
                         onClick={() => navigate("/contact")}
@@ -95,12 +133,12 @@ const Home = () => {
                     </div>
                   </div>
                 </Fade>
-               
-                <div className="col-12 col-lg-8  lg:h-[400px] mx-auto col-md-12 col-sm-12 mb-5 animation">
+
+                <div className="col-12 col-lg-8 lg:h-[400px] mx-auto col-md-12 col-sm-12  mb-5 animation">
                   <img
                     src={img1}
                     style={{ boxShadow: "2px 2px 20px #8c40d4" }}
-                    className="img-fluid"
+                    className="img-fluid "
                     alt="TechCreator software company"
                   />
                 </div>
@@ -128,7 +166,7 @@ const Home = () => {
                     <h2 className="mt-3 Develop">
                       Our Comprehensive Software Solutions
                     </h2>
-                    <p className="pt-3">
+                    <p className="pt-3 para1">
                       At TechCreator Software House, we believe that client
                       satisfaction is key to our success, and we are committed
                       to providing exceptional customer service at every stage
@@ -157,11 +195,11 @@ const Home = () => {
             <div className="col-10 mx-auto">
               <div className="row abs">
                 <Fade bottom delay={500} duration={1000}>
-                  <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column  fade__bottom">
-                    <h2 className="mt-3 Develop">
+                  <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex  flex-column justify-center fade__bottom">
+                    <h2 className="Develop row">
                       Innovative Software Solutions
                     </h2>
-                    <p className="mt-2 Over ">
+                    <p className=" Over  para1">
                       TechCreator is a technology software company that
                       specializes in developing custom software solutions to
                       help businesses of all sizes achieve their goals.{" "}
@@ -175,7 +213,7 @@ const Home = () => {
                 </Fade>
                 <div className="col-lg-5 col-md-12 col-sm-12  header-img mb-5">
                   <Fade right duration={1000}>
-                    <div className="img11"></div>
+                    {/* <div className="img11"></div> */}
                     <div className="img8">
                       <img
                         src={img8}
@@ -233,11 +271,11 @@ const Home = () => {
                   </Fade>
                 </div>
                 <Fade bottom delay={500} duration={1000}>
-                  <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex    flex-column">
-                    <h2 className="mt-5 Develop">
+                  <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex  justify-center  flex-column">
+                    <h2 className=" Develop">
                       Software Products Discovery
                     </h2>
-                    <p className="mt-5 Over">
+                    <p className=" Over para1">
                       We understand that every project is unique, and we work
                       closely with our clients to ensure that their software
                       products are tailored to meet their specific business
@@ -257,8 +295,8 @@ const Home = () => {
               <div className="row abs">
                 <Fade bottom delay={500} duration={1000}>
                   <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-                    <h2 className="mt-3 Develop">Talent Augmentation</h2>
-                    <p className="mt-5 Over">
+                    <h2 className=" Develop">Talent Augmentation</h2>
+                    <p className=" Over para1">
                       TechCreator Software Development Company understands that
                       businesses need a strong and reliable software development
                       team to stay ahead of the competition. But finding and
@@ -325,7 +363,57 @@ const Home = () => {
 
           <div className="row mt-5 backgimg text-white  rounded">
             <Fade bottom duration={1000}>
-              <div className="col-10 mx-auto mt-5">
+              <div className="col-10 mx-6 md:mx-auto mb-5  ">
+
+                <div className="md:flex  gap-3  mt-4  ">
+                  <div className=" md:w-[50%] bg-white text-black p-3 mt-4">
+                    <div className="">
+                      <div className="">
+                        <img
+                          src={repairimg}
+                          className=""
+                          alt="TechCreator Software House"
+                        />
+                      </div>
+                    </div>
+                    <div className="">
+                      <p className="text-gray-400 text-xl mt-3">Repaircms</p>
+                      <p className="lead text-gray-400 ">
+                        TechCreator created a platform that led Repaircms to its
+                        digital transformation process
+                      </p>
+                      <p className=" lead">
+                        TechCreator's innovative software solutions have helped us
+                        streamline our operations and improve our
+                        customer service.
+                      </p>
+                    </div>
+
+                  </div>
+                  <div className="bg-white text-black md:w-[50%] p-3 mt-4">
+                    <div >
+                      <div className="">
+                        <img
+                          src={patronimg}
+                          className=""
+                          alt="TechCreator Software House"
+                        />
+                      </div>
+                    </div>
+                    <div >
+                      <p className="text-gray-400 text-xl mt-3">PatronWorks</p>
+                      <p className=" text-2xl text-gray-400 text-start ">
+                        Point of sale system for retail businesses
+                      </p>
+                      <p className="lead ">
+                        We were hesitant to switch to a new{" "}
+                        <a href="https://patronworks.com/">POS system</a>, but we
+                        are so glad we choose Techcreator.
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
                 <h2 className=" text-center here">
                   Here are our services in action
                 </h2>
@@ -333,7 +421,7 @@ const Home = () => {
                   Take a look at some of what we do.
                 </h3>
                 <a
-                  className="cmp-btn2 mt-5"
+                  className="cmp-btn2 mt-5  cursor-pointer"
                   onClick={() => navigate("/services")}
                 >
                   View all our work{" "}
@@ -354,29 +442,6 @@ const Home = () => {
                     ></path>
                   </svg>
                 </a>
-                <div className="row bg-sam mt-5 w-[100%] md:w-auto">
-                  <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-                    <p className="petro">Repaircms</p>
-                    <p className="mt-2 Plat">
-                      TechCreator created a platform that led Repaircms to its
-                      digital transformation process
-                    </p>
-                    <p className="we lead">
-                      TechCreator's innovative software solutions have helped us
-                      streamline our operations and improve our
-                      customer service.
-                    </p>
-                  </div>
-                  <div className="col-lg-5 col-md-12 col-sm-12 header-img">
-                    <div className="img13 mt-3">
-                      <img
-                        src={repairimg}
-                        className="img-fluid pt-5"
-                        alt="TechCreator Software House"
-                      />
-                    </div>
-                  </div>
-                </div>
               </div>
             </Fade>
           </div>
@@ -384,28 +449,7 @@ const Home = () => {
           <div className="row text-white  rounded">
             <Fade bottom delay={500} duration={1000}>
               <div className="col-10 mx-auto">
-                <div className="row bg-sam mt-5">
-                  <div className="col-lg-7 col-md-12 col-sm-12 pt-5 pt-lg-0  d-flex justify-content-center flex-column">
-                    <p className="petro">PatronWorks</p>
-                    <p className="mt-2 Plat">
-                      Point of sale system for retail businesses
-                    </p>
-                    <p className="we lead">
-                      We were hesitant to switch to a new{" "}
-                      <a href="https://patronworks.com/">POS system</a> , but we
-                      are so glad we chose Techcreator.
-                    </p>
-                  </div>
-                  <div className="col-lg-5 col-md-12 col-sm-12 header-img">
-                    <div className="img13 mt-3">
-                      <img
-                        src={patronimg}
-                        className="img-fluid pt-5"
-                        alt="TechCreator Software House"
-                      />
-                    </div>
-                  </div>
-                </div>
+
               </div>
             </Fade>
           </div>
@@ -421,22 +465,36 @@ const Home = () => {
 
       <section className="card-img">
         <div className="container py-5 ">
-          <div className="row ">
-            {boxInfo.map((item) => {
+          <div className="flex  flex-wrap gap-1 justify-center  items-center p-5">
+            <Slider {...seetings} className="w-[310px]  sm:w-full  md:w-[1150px] ">
+
+              <img className="object-cover" src={first} />
+              <img className="object-cover" src={third} />
+              <img className="object-cover" src={second} />
+              <img className="object-cover" src={ss} />
+              <img className="object-cover" src={fourth} />
+
+            </Slider>
+            {/* <img  className="object-cover md:w-[550px] " src={first}/>
+            <img  className="object-cover md:w-[550px] " src={third}/>
+            <img  className="object-cover md:w-[550px] " src={second}/> */}
+
+          </div>
+          <div className="row flex justify-center">
+            {/* {boxInfo.map((item) => {
               return (
-                <Fade bottom duration={1000} >
+                <Fade bottom duration={1000}>
                   <div className="col-md-6  col-lg-4 py-5">
                     <div className="box p-3 bg-white text-dark">
                       <img src={item.img} className=" img-div pt-2" />
                       <img
-                          src={image4}
-                          alt="Techcreator Software Company"
-                          className="img-quote self-start top-11 relative"
-                        />
+                        src={image4}
+                        alt="Techcreator Software Company"
+                        className="img-quote self-start top-11 relative"
+                      />
                       <p className="">{item.para}</p>
                       <a>
                         {" "}
-                       
                         <img
                           src={image4}
                           alt="TechCreator Software House"
@@ -449,7 +507,7 @@ const Home = () => {
                   </div>
                 </Fade>
               );
-            })}
+            })} */}
 
             {/* start count jsx */}
             <div className="row">
@@ -508,7 +566,7 @@ const Home = () => {
           <Fade bottom duration={1000}>
             <div className="col-10 mx-auto ">
               <div className="row">
-                <div className="col-lg-12 col-md-12 col-sm-12 pt-5 pt-lg-0  proj-header ">
+                <div className="col-lg-12 col-md-12 col-sm-12  pt-lg-0  proj-header ">
                   {/* <p>
                     Ready to tell TechCreator about{" "}
                     <span className="bold">your project?</span>
@@ -540,8 +598,8 @@ const Home = () => {
         </div>
       </div>
 
-      <Career />
-      <Footers />
+
+
     </>
   );
 };

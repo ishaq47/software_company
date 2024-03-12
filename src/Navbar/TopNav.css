@@ -7,21 +7,24 @@
 .main-nav{
 	padding: 10px;
 }
+
 .nav-item {
 	padding: 10px;
 	font-size: 15px;
 	color: white;
+	
 }
 .nav-item:hover {
-	color: goldenrod;
+	color: blueviolet;
 	border-radius: 5px;
+	font-weight: 600;
 }
 .nav-item:after {
 	content: '';
 	width: 0%;
 	height: 2px;
-	background: goldenrod !important;
-	color: goldenrod !important;
+	background: blueviolet !important;
+	color: blueviolet !important;
 	display: block;
 	margin: auto;
 	transition: .5s;
@@ -35,34 +38,48 @@
 }
 @media screen and (max-width: 991px) {
 	.nav-item:hover {
-	  background-color: goldenrod;
-	 
+	  background-color: blueviolet;
 	  border-bottom: none;
 	  color:white;
 	}
+	.nav1 {
+		margin-top: 20px;
+	}
+	
 	.btn-nav {
-		/* background: none !important; */
 		border-radius: 0;
 		width: 110px;
 		align-self: center;
-	
+		position: relative;
+		top: 5px;
 	}
 	
   }
-  
+  .logop {
+	color: white;
+	font-weight: 400;
+  }
+  .logop:hover{
+	font-weight: 500;
+	color:rgb(190, 50, 245);
+  }
 .logo img {
-	width: 100px;
+	 width: 45px;
+	 height: 45px;
+	color: blueviolet;
 }
 .logo img:hover{
-	color: goldenrod;
+	color: rgb(168, 45, 168);
 }
 .btn-nav {
-	background-color:goldenrod ;
+	background-color:blueviolet ;
 	color: white;
 	
 	border-radius: 3px;
 }
 .btn-nav:hover{
 	color: white;
-	background-color: rgb(216, 163, 30) ;
+	background-color: rgb(146, 30, 255) ;
+	font-weight: 500;
+
 }

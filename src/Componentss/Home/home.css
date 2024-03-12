@@ -3,14 +3,28 @@
   height: 100%;
   width: calc(130% - 80px);
   top: 50px;
-  right: 20px;
+  /* right: 20px; */
   bottom: 10px;
 
   animation: animateUser 5s linear infinite;
 }
+.maintext {
+  font-weight: bold; 
+}
+@media screen and (max-width:480px){
+
+  .para1 {
+    text-align: center;
+  }
+  .maintext{
+    font-weight: 700;
+  }
+  
+}
+
 @keyframes animateUser {
   50% {
-    right: 20px;
+  
     top: 10px;
   }
 }
@@ -20,7 +34,7 @@
   padding-bottom: 50px;
 }
 .text-textColor {
-  color: goldenrod;
+  color: rgb(137, 28, 240);
 }
 .home-main {
   padding-top: 100px;
@@ -34,12 +48,17 @@
   background-repeat: no-repeat;
   position: relative;
   vertical-align: middle;
-  padding-bottom: 150px;
-  background-color: rgb(100,149,237);
+  padding-bottom: 100px;
+  /* background-color: rgb(100,149,237); */
+  background-color: black;
+
+
 }
 
 .backgimg {
-  background-image: url(/src/image/img2.webp);
+  /* background-image: url(/src/image/img2.webp);
+   */
+   background-color: black;
   /* width: 100%; */
   height: auto;
   background-size: cover;
@@ -50,6 +69,7 @@
 }
 .soft-img img {
   width: 80%;
+
 }
 
 .my-img {
@@ -57,6 +77,7 @@
   box-shadow: 0 15px 32px rgb(122 130 171 / 20%);
   border-radius: 8px;
 }
+
 
 .header-img .img3 {
   width: 450px;
@@ -69,12 +90,13 @@
   width: 500px;
   margin-left: -20px;
   z-index: -1;
-  margin-top: 470px;
+  margin-top: 40px;
   margin-bottom: 60px;
 }
 
 .header-img .img8 img {
   border: none;
+  
 }
 
 .header-img .img4 {
@@ -147,7 +169,7 @@
 
 .btn-con1 {
   padding: 16px 33px;
-  background-color: rgb(224, 168, 24) !important;
+  background-color: blueviolet !important;
   border-radius:5px !important;
   color: #fff !important;
   transition: 0.3s;
@@ -155,11 +177,12 @@
   font-size: 15px;
   padding: 20px !important;
   font-weight:600;
-  border: 2px solid goldenrod;
+  border: 2px solid blueviolet;
   transition: 0.5s;
 }
 .btn-con1:hover{
-  background-color: rgb(245, 183, 25) !important
+  background-color: blueviolet !important;
+  font-weight: 500;
 }
 .mt-3 button {
   display: flex;
@@ -192,7 +215,7 @@
   align-items: center;
   justify-content: center;
   padding: 16px 33px;
-  color: goldenrod;
+  color: blueviolet;
   font-size: 16px;
   line-height: 24px;
   font-weight: 900;
@@ -203,15 +226,17 @@
   transition: all 0.3s ease-in-out;
   grid-gap: 5px;
   gap: 5px;
-  margin-top: 15px;
+  /* margin-top: 15px; */
   text-decoration: none;
   width: auto;
-  border-color: goldenrod;
+  border-color: blueviolet;
 }
 
 .cmp-btn:hover {
-  background-color: goldenrod;
+  background-color: rgb(152, 48, 250);
   color: white;
+  border: none;
+  
 }
 
 .nav_bg h4 {
@@ -229,13 +254,14 @@
   border: none;
   text-transform: uppercase;
   background: none;
-  color: #f1860e;
+  color: blueviolet;
   text-decoration: none;
   font-weight: 700;
 }
 
 .Develop {
   margin-bottom: 16px;
+  text-align: left;
   color: #15284b;
   font-weight: 800;
   font-size: 40px;
@@ -270,7 +296,6 @@
 .petro {
   color: #8a94a5;
   margin-left: 2%;
-  margin-top: 5%;
   font-size: 25px;
 }
 
@@ -285,7 +310,6 @@
   color: #313d52;
   max-width: 950px;
   font-size: 20px;
-  margin-top: 5%;
   margin-left: 2%;
   margin-bottom: 5%;
 }
@@ -298,7 +322,7 @@
   text-transform: uppercase;
   background: none;
   margin-left: 2%;
-  color: #f1860e;
+  color: blueviolet;
   text-decoration: none;
   font-weight: 700;
   transition: 0.5s;
@@ -312,25 +336,27 @@
   color: #ffffff;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 900;
-  background-color: goldenrod;
-  border: 3px solid;
+  font-weight: 400;
+  background-color: blueviolet;
   border-radius: 155px;
   white-space: nowrap;
   transition: all 0.3s ease-in-out;
   grid-gap: 5px;
   gap: 5px;
   margin-top: 15px;
-  text-decoration: none;
   width: auto;
   text-align: center;
   margin-left: 40%;
-  border-color: goldenrod;
+  
+  
 }
 
+
 .cmp-btn2:hover {
-  background-color: #ffffff;
-  color: goldenrod;
+  background-color: rgb(157, 79, 230);
+  color: white;
+  font-weight: 500;
+  
 }
 /* @media screen and (max-width:768px) {
     .cmp-btn2{
@@ -422,15 +448,15 @@
     margin-top: -632px;
   }
 
-  .header-img .img11 {
+  /* .header-img .img11 {
     position: absolute;
     width: 9rem;
     height: 9rem;
     background-image: url(/src/image/img11.webp);
     background-size: cover;
-    margin-top: -1%;
+
     margin-left: 30%;
-  }
+  } */
 
   .abs {
     display: flex;
@@ -458,7 +484,7 @@
     font-size: 16px;
     line-height: 24px;
     font-weight: 900;
-    background-color: #e56700;
+    background-color: blueviolet;
     border: 2px solid;
     border-radius: 155px;
     white-space: nowrap;
@@ -469,13 +495,14 @@
     text-decoration: none;
     width: auto;
     text-align: center;
-    margin-left: 5% !important;
-    border-color: #e56700;
+    margin-left: 11% !important;
+    border-color: blueviolet;
   }
 
   .cmp-btn2:hover {
-    background-color: #ffffff;
-    color: #e56700;
+    background-color: rgb(153, 52, 248);
+    color: white;
+    border: none;
   }
 
   .howbtn {
@@ -486,7 +513,7 @@
     text-transform: uppercase;
     background: none;
     margin-left: 2%;
-    color: #f1860e;
+    color: blueviolet;
     text-decoration: none;
     font-weight: 700;
   }
@@ -612,7 +639,7 @@
     font-size: 16px;
     line-height: 24px;
     font-weight: 900;
-    background-color: goldenrod;
+    background-color: blueviolet;
     border: 2px solid;
     border-radius: 155px;
     white-space: nowrap;
@@ -624,12 +651,13 @@
     width: auto;
     text-align: center;
     margin-left: 30% !important;
-    border-color: #e56700;
+    border-color: blueviolet;
   }
 
   .cmp-btn2:hover {
-    background-color: #ffffff;
-    color: goldenrod;
+    background-color: blueviolet;
+    color: white;
+    border: none;
   }
 
   .Plat {
@@ -897,7 +925,8 @@
 }
 
 .card-img {
-  background-image: url(/src/image/ba.svg);
+  /* background-image: url(/src/image/ba.svg); */
+  background-color: black;
   width: 100%;
   height: auto;
   background-size: cover;
@@ -905,7 +934,7 @@
   background-repeat: no-repeat;
   position: relative;
   vertical-align: middle;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
 }
 .hero-dev p {
   font-size: 18px;
@@ -977,7 +1006,7 @@
 }
 
 .count p {
-  color: #e56700;
+  color: blueviolet;
   font-size: 50px;
 }
 
@@ -1020,7 +1049,7 @@
 
 .mains {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
   background-color: rgb(254, 250, 250);
 }
 
@@ -1041,9 +1070,9 @@
 .proj-btn {
   width: 140px;
   height: 50px;
-  background-color: goldenrod;
+  background-color: blueviolet;
   border-radius: 30px;
-  border-color: goldenrod;
+  border-color: blueviolet;
   color: white;
   transition: 0.5s;
   border: 2px solid;
@@ -1051,8 +1080,9 @@
 
 .proj-btn:hover {
   background-color: #fff;
-  border-color: goldenrod;
-  color: goldenrod;
+  border-color: blueviolet;
+  font-weight: 600;
+  color: blueviolet;
 }
 
 @media (min-width: 320px) and (max-width: 499px) {

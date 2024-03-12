@@ -7,21 +7,30 @@ import { GrTwitter } from "react-icons/gr";
 import { SiUpwork } from "react-icons/si";
 import { IoLogoYoutube } from "react-icons/io";
 import Fade from "react-reveal/Fade";
-import logofot from "../../image/techlogo.png";
+import logofot from "../../image/logol.png";
 import { ImLocation2 } from "react-icons/im";
 import { MdOutlineEmail } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
+import Us from "../../image/unitedstate.png"
 const Footers = () => {
   return (
     <>
       <Fade bottom duration={2000}>
-        <footer className="footer-39201 bg-primary text-white mt-5 pb-3">
+        <footer className="footer-39201 bg-black text-white mt-5 pb-3">
           <div className="container pt-5">
             <div className="row">
               <div className="col-md-4">
-                <NavLink to="/">
-                  <img src={logofot} className="logofot mb-8" />
+                <NavLink
+                  to="/"
+                  className="logo flex relative bottom-5 xs:bottom-3 "
+                >
+                  <img src={logofot} alt="logo" />
+                  <span className="hover:text-violet-600 cursor-pointer lh-1 self-center logop  ">
+                    TECH
+                    <br />
+                    CREATOR
+                  </span>
                 </NavLink>
                 <p className="">
                   We have been providing quality services since 2001. We provide
@@ -30,8 +39,8 @@ const Footers = () => {
                 </p>
               </div>
               <div className="col-md-3 mb-4 mb-md-0">
-                <h4>Useful Links</h4>
-                <ul className="list-unstyled nav-links  ">
+                <h4 className="hover:text-violet-600">Useful Links</h4>
+                <ul className="list-unstyled nav-links">
                   <NavLink to="/">
                     <li>
                       <a style={{ color: "white" }}>Home</a>
@@ -62,16 +71,16 @@ const Footers = () => {
               <div className="col-md-4 mb-md-0  contect-div">
                 <div className="col mb-4 mb-md-0 abs">
                   <div className="col ">
-                    <h4 className="mb-4">CONTACT</h4>
+                    <h4 className="mb-4 hover:text-violet-600">CONTACT</h4>
                     <div className="d-flex">
                       <div className="mt-1 loc">
                         {/* <div style={{background:"#e56700", padding:"7px",  borderRadius:"50%"}}> */}
-                        <ImLocation2 className="w-6 h-6 hover:text-yellow-600" />
+                        <ImLocation2 className="w-6 h-6 hover:text-violet-600" />
                         {/* </div> */}
                       </div>
 
-                      <div style={{ marginLeft: "10px" }}>
-                        <a
+                      <div className="location" style={{ marginLeft: "10px" }}>
+                        <a className="a"
                           href="https://goo.gl/maps/9jGNEgeX2fomX5CMA"
                           target="_blank"
                           style={{ color: "white" }}
@@ -84,13 +93,13 @@ const Footers = () => {
 
                     <div className="d-flex">
                       {/* <div style={{background:"#e56700", padding:"7px",  borderRadius:"50%"}}> */}
-                      <MdOutlineEmail className="w-6 h-6 self-center   hover:text-yellow-600" />
+                      <MdOutlineEmail className="w-6 h-6 self-center   hover:text-violet-600" />
                       {/* </div> */}
                       &nbsp; &nbsp;
-                      <div className="pt-1">
+                      <div className="pt-1 location">
                         <a
                           href="mailto:contact@techcreator.co"
-                          className="text-white"
+                          className="text-white "
                         >
                           contact@techcreator.co
                         </a>
@@ -99,11 +108,12 @@ const Footers = () => {
 
                     <div className="d-flex pt-2">
                       {/* <div style={{background:"#e56700", padding:"7px",  borderRadius:"50%"}}> */}
-                      <BsWhatsapp className="w-6 h-6 self-center  hover:text-yellow-600" />
+                      <BsWhatsapp className="w-6 h-6 self-center  hover:text-violet-600" />
                       {/* </div> */}
                       &nbsp; &nbsp;
-                      <div className="pt-1">
+                      <div className="pt-1 location">
                         <a
+
                           href="tel:+92-311-9265290"
                           style={{ color: "white" }}
                         >
@@ -111,24 +121,38 @@ const Footers = () => {
                         </a>
                       </div>
                     </div>
-                    <div className="mt-3 flex flex-col gap-2  ">
-                      <div>
-                      
-                      <div className="flex gap-2  items-center">
-                      <a href="https://mentoga.com/saudkhan" target="_blank">
-                       <button className=" text-white bg-yellow-600 px-4 py-2 rounded-full animate-pulse w-full">MENTOGA</button>
-                      </a>
-                      
-                      <NavLink to="/caleneder"
-                      className="relative">
-                        <button className=" text-white bg-yellow-600 py-2 px-3 rounded-full animate-pulse w-full  ">
-                          {" "}
-                          MAKE APPOINTMENT{" "}
-                        </button>
-                        
-                      </NavLink>
-                     
+                    <div className="d-flex pt-2">
+                      {/* <div style={{background:"#e56700", padding:"7px",  borderRadius:"50%"}}> */}
+                      {/* <BsWhatsapp className="w-6 h-6 self-center  hover:text-violet-600" /> */}
+                      <img width={40} className="rounded self-center h-[25px]" src={Us}/>
+                      {/* </div> */}
+                      &nbsp; &nbsp;
+                      <div className="pt-1 location ">
+                
+                        <a href="tel:+1-321-407-3272" style={{ color: "white" }}>
+                          +1-321-407-3272
+                        </a>
                       </div>
+                    </div>
+                    <div className="mt-3 flex flex-col gap-2  ">
+                      <div >
+                        <div className="flex gap-3  items-center">
+                          <a
+                            href="https://mentoga.com/saudkhan"
+                            target="_blank"
+                          >
+                            <button className="cbtn text-white  bg-violet-600 hover:bg-violet-500 px-4 py-2 rounded-full  ">
+                              CONSULTANCY
+                            </button>
+                          </a>
+
+                          <NavLink to="/caleneder" className="relative">
+                            <button className="cbtn text-white bg-violet-600 hover:bg-violet-500 py-2 px-3 rounded-full   ">
+                              {" "}
+                              APPOINTMENT{" "}
+                            </button>
+                          </NavLink>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -185,7 +209,6 @@ const Footers = () => {
                   >
                     <IoLogoYoutube className="conicon " />
                   </a>
-                
                 </div>
               </div>
             </div>

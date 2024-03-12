@@ -1,44 +1,48 @@
 .md_icon {
   margin-left: 5px;
 }
-
+.cbtn:hover {
+  font-weight: 500;
+}
 .footer-39201 h4 {
   font-size: 20px;
   color: #fff;
   margin-bottom: 20px;
 }
-
+.location a:hover {
+  color: blueviolet !important;
+}
 .footer-39201 .nav-links li {
   display: block;
 }
-
 .footer-39201 .nav-links li a {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
 }
 
-.footer-39201 .nav-links li a:hover {
-  color: goldenrod;
-  opacity: 0.3;
+.footer-39201 .nav-links li a:hover{
+   color: #a442ff !important;
+  font-weight: 600 !important;
+  border-bottom: 2px solid blueviolet;
 }
 
 .contect-div .btn-jion {
   width: 100px;
   height: 45px;
-  background-color: goldenrod;
-  border-color: goldenrod;
+  background-color: blueviolet;
+  border-color: blueviolet;
   border-radius: 20px;
   color: #fff;
   transition: 0.3s;
   font-size: 15px;
   font-weight: 600;
-  border: 2px solid goldenrod;
+  border: 2px solid blueviolet;
 }
 .contect-div .btn-jion:hover {
   background-color: #fff;
-  color: goldenrod;
-  border-color: goldenrod;
+  color: blueviolet;
+  border-color: blueviolet;
 }
 
 .abs h3 {
@@ -56,7 +60,7 @@
 
 .fot a {
   text-decoration: none;
-  color: gray;
+  /* color: gray; */
   font-size: 14px;
   font-weight: 400;
   cursor: pointer;
@@ -73,24 +77,22 @@
 }
 
 .conicon:hover {
-  color: goldenrod;
+  color: blueviolet;
 }
 
 .social-icons {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* width: 300px; */
     height: 25px;
 }
 .logofot {
   width: 120px;
+  
 }
-/* .icon-inner span{
-background-color: #e56700;
-} */
+
 .loc p{
-  background-color: goldenrod;
+  background-color: blueviolet;
   border-radius: 50%;
   border: 1px solid gray;
   padding: 5px 8px;

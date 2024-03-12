@@ -100,7 +100,7 @@ function Blog() {
   }, []);
 
   return (
-    <div className="blog-container">
+    <div className="blog-container h-screen">
       <div className='heading_class'>
       <h1>Blog Posts</h1>
       </div>

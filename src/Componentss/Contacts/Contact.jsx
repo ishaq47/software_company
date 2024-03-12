@@ -115,7 +115,7 @@ const Contact = () => {
                   <div className=" flex justify-center w-[400px]">
                   <NavLink to="/meeting"
                          className=" text-white ">
-                    <button className="relative bottom-10 bg-yellow-600 p-2 rounded-full animate-pulse w-[200px]  ">
+                    <button className="relative bottom-10 bg-violet-600 hover:bg-violet-500 p-2 rounded-full w-[200px]  ">
                           BOOK MEETING{" "}
                           </button> 
                           </NavLink>
@@ -345,7 +345,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <Footers />
     
     </>
   );
